@@ -1,14 +1,10 @@
 //
-//  THMMacros.h
-//  thm-ios-iphone
-//
 //  Created by Kiru on 2013-09-19.
 //  Copyright (c) 2013 THM. All rights reserved.
 //
 
-#ifndef thm_ios_iphone_THMMacros_h
-#define thm_ios_iphone_THMMacros_h
-
+#ifndef AppMacros_h
+#define AppMacros_h
 
 #define ThrowError(e) @throw [NSException exceptionWithName:e reason:e userInfo:nil]
 #define AbstractClassRequiresOverride ThrowError(@"You must override this")

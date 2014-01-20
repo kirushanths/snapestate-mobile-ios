@@ -7,15 +7,30 @@
 //
 
 #import "SEAppDelegate.h"
+#import "Flurry.h"
+#import "SEConstants.h"
+#import "SENavigationViewController.h"
+#import "SELoginViewController.h"
 
 @implementation SEAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+#ifdef SE_DEBUG
+#else
+	[Flurry setCrashReportingEnabled:YES];
+	[Flurry startSession:FLURRY_TOKEN];
+#endif
+	
+	SELoginViewController *loginVC = [[SELoginViewController alloc] init];
+	SENavigationViewController *navVC = [[SENavigationViewController alloc] initWithRootViewController:loginVC];
+	
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+	self.window.rootViewController = navVC;
+	
     return YES;
 }
 

@@ -58,6 +58,11 @@
 		BC5838DF188B8A9A00301C53 /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC5838D6188B8A8100301C53 /* libRestKit.a */; };
 		BC5838E5188B8AE600301C53 /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5838E2188B8AE600301C53 /* KeychainItemWrapper.m */; };
 		BC5838E6188B8AE600301C53 /* wwanconnect.c in Sources */ = {isa = PBXBuildFile; fileRef = BC5838E3188B8AE600301C53 /* wwanconnect.c */; };
+		BC5838E9188CA58600301C53 /* SEBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5838E8188CA58600301C53 /* SEBaseViewController.m */; };
+		BC5838EC188CA59900301C53 /* SELoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5838EB188CA59900301C53 /* SELoginViewController.m */; };
+		BC5838F1188CA84A00301C53 /* SENavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5838F0188CA84A00301C53 /* SENavigationViewController.m */; };
+		BC5838F5188CC7E400301C53 /* loginbg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC5838F3188CC7E400301C53 /* loginbg@2x.png */; };
+		BC5838F6188CC7E400301C53 /* loginbgraw.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BC5838F4188CC7E400301C53 /* loginbgraw.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -188,6 +193,14 @@
 		BC5838E2188B8AE600301C53 /* KeychainItemWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainItemWrapper.m; sourceTree = "<group>"; };
 		BC5838E3188B8AE600301C53 /* wwanconnect.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wwanconnect.c; sourceTree = "<group>"; };
 		BC5838E4188B8AE600301C53 /* wwanconnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wwanconnect.h; sourceTree = "<group>"; };
+		BC5838E7188CA58600301C53 /* SEBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEBaseViewController.h; sourceTree = "<group>"; };
+		BC5838E8188CA58600301C53 /* SEBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEBaseViewController.m; sourceTree = "<group>"; };
+		BC5838EA188CA59900301C53 /* SELoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SELoginViewController.h; sourceTree = "<group>"; };
+		BC5838EB188CA59900301C53 /* SELoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SELoginViewController.m; sourceTree = "<group>"; };
+		BC5838EF188CA84A00301C53 /* SENavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SENavigationViewController.h; sourceTree = "<group>"; };
+		BC5838F0188CA84A00301C53 /* SENavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SENavigationViewController.m; sourceTree = "<group>"; };
+		BC5838F3188CC7E400301C53 /* loginbg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "loginbg@2x.png"; sourceTree = "<group>"; };
+		BC5838F4188CC7E400301C53 /* loginbgraw.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = loginbgraw.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -420,6 +433,7 @@
 		BC5837D3188B881300301C53 /* assets */ = {
 			isa = PBXGroup;
 			children = (
+				BC5838F2188CC7E400301C53 /* backgrounds */,
 			);
 			path = assets;
 			sourceTree = "<group>";
@@ -457,6 +471,12 @@
 		BC5837E0188B881300301C53 /* controllers */ = {
 			isa = PBXGroup;
 			children = (
+				BC5838E7188CA58600301C53 /* SEBaseViewController.h */,
+				BC5838E8188CA58600301C53 /* SEBaseViewController.m */,
+				BC5838EA188CA59900301C53 /* SELoginViewController.h */,
+				BC5838EB188CA59900301C53 /* SELoginViewController.m */,
+				BC5838EF188CA84A00301C53 /* SENavigationViewController.h */,
+				BC5838F0188CA84A00301C53 /* SENavigationViewController.m */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -538,6 +558,15 @@
 				BC5838E4188B8AE600301C53 /* wwanconnect.h */,
 			);
 			path = AppleSampleCode;
+			sourceTree = "<group>";
+		};
+		BC5838F2188CC7E400301C53 /* backgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				BC5838F3188CC7E400301C53 /* loginbg@2x.png */,
+				BC5838F4188CC7E400301C53 /* loginbgraw.jpg */,
+			);
+			path = backgrounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -656,8 +685,10 @@
 			files = (
 				BC583873188B881300301C53 /* .gitignore in Resources */,
 				BC11A5BE188B6F120002D8D3 /* InfoPlist.strings in Resources */,
+				BC5838F5188CC7E400301C53 /* loginbg@2x.png in Resources */,
 				BC583871188B881300301C53 /* PhoneFormats.dat in Resources */,
 				BC11A5C6188B6F120002D8D3 /* Images.xcassets in Resources */,
+				BC5838F6188CC7E400301C53 /* loginbgraw.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -680,6 +711,7 @@
 				BC583881188B881300301C53 /* UIImage+Additions.m in Sources */,
 				BC583880188B881300301C53 /* NSString+HTML.m in Sources */,
 				BC58387E188B881300301C53 /* NSError+Additions.m in Sources */,
+				BC5838EC188CA59900301C53 /* SELoginViewController.m in Sources */,
 				BC583872188B881300301C53 /* RMPhoneFormat.m in Sources */,
 				BC11A5C4188B6F120002D8D3 /* SEAppDelegate.m in Sources */,
 				BC583879188B881300301C53 /* UIDevice-Capabilities.m in Sources */,
@@ -696,6 +728,8 @@
 				BC5837E9188B881300301C53 /* JSONKit.m in Sources */,
 				BC583876188B881300301C53 /* UIScrollView+SVInfiniteScrolling.m in Sources */,
 				BC58387A188B881300301C53 /* UIDevice-Hardware.m in Sources */,
+				BC5838E9188CA58600301C53 /* SEBaseViewController.m in Sources */,
+				BC5838F1188CA84A00301C53 /* SENavigationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
