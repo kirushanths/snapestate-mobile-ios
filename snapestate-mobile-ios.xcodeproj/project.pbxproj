@@ -63,6 +63,9 @@
 		BC5838F1188CA84A00301C53 /* SENavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5838F0188CA84A00301C53 /* SENavigationViewController.m */; };
 		BC5838F5188CC7E400301C53 /* loginbg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC5838F3188CC7E400301C53 /* loginbg@2x.png */; };
 		BC5838F6188CC7E400301C53 /* loginbgraw.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BC5838F4188CC7E400301C53 /* loginbgraw.jpg */; };
+		BCE1B878189DE7F100BA0624 /* SETextFieldView.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE1B877189DE7F100BA0624 /* SETextFieldView.m */; };
+		BCE1B87E189DE83400BA0624 /* SETextField.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE1B87D189DE83400BA0624 /* SETextField.m */; };
+		BCE1B881189DE99300BA0624 /* SEButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE1B880189DE99300BA0624 /* SEButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -201,6 +204,12 @@
 		BC5838F0188CA84A00301C53 /* SENavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SENavigationViewController.m; sourceTree = "<group>"; };
 		BC5838F3188CC7E400301C53 /* loginbg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "loginbg@2x.png"; sourceTree = "<group>"; };
 		BC5838F4188CC7E400301C53 /* loginbgraw.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = loginbgraw.jpg; sourceTree = "<group>"; };
+		BCE1B876189DE7F100BA0624 /* SETextFieldView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SETextFieldView.h; sourceTree = "<group>"; };
+		BCE1B877189DE7F100BA0624 /* SETextFieldView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SETextFieldView.m; sourceTree = "<group>"; };
+		BCE1B87C189DE83400BA0624 /* SETextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SETextField.h; sourceTree = "<group>"; };
+		BCE1B87D189DE83400BA0624 /* SETextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SETextField.m; sourceTree = "<group>"; };
+		BCE1B87F189DE99300BA0624 /* SEButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEButton.h; sourceTree = "<group>"; };
+		BCE1B880189DE99300BA0624 /* SEButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -508,6 +517,12 @@
 		BC5837E7188B881300301C53 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				BCE1B876189DE7F100BA0624 /* SETextFieldView.h */,
+				BCE1B877189DE7F100BA0624 /* SETextFieldView.m */,
+				BCE1B87C189DE83400BA0624 /* SETextField.h */,
+				BCE1B87D189DE83400BA0624 /* SETextField.m */,
+				BCE1B87F189DE99300BA0624 /* SEButton.h */,
+				BCE1B880189DE99300BA0624 /* SEButton.m */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -710,12 +725,15 @@
 				BC583875188B881300301C53 /* SDURLCache.m in Sources */,
 				BC583881188B881300301C53 /* UIImage+Additions.m in Sources */,
 				BC583880188B881300301C53 /* NSString+HTML.m in Sources */,
+				BCE1B881189DE99300BA0624 /* SEButton.m in Sources */,
 				BC58387E188B881300301C53 /* NSError+Additions.m in Sources */,
 				BC5838EC188CA59900301C53 /* SELoginViewController.m in Sources */,
 				BC583872188B881300301C53 /* RMPhoneFormat.m in Sources */,
 				BC11A5C4188B6F120002D8D3 /* SEAppDelegate.m in Sources */,
 				BC583879188B881300301C53 /* UIDevice-Capabilities.m in Sources */,
+				BCE1B878189DE7F100BA0624 /* SETextFieldView.m in Sources */,
 				BC58387D188B881300301C53 /* UIDevice-Reachability.m in Sources */,
+				BCE1B87E189DE83400BA0624 /* SETextField.m in Sources */,
 				BC5838E5188B8AE600301C53 /* KeychainItemWrapper.m in Sources */,
 				BC583874188B881300301C53 /* SDCachedURLResponse.m in Sources */,
 				BC5838E6188B8AE600301C53 /* wwanconnect.c in Sources */,
