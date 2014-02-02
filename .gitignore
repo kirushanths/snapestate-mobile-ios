@@ -21,6 +21,7 @@ build/*
 *.pbxuser
 *.xcworkspace
 xcuserdata
+*.xcuserdata
 *.xcodeproj/ !*.xcodeproj/project.pbxproj
  
   
