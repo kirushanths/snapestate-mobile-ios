@@ -7,6 +7,7 @@
 //
 
 #import "SELoginViewController.h"
+#import "SEDiscoverViewController.h"
 #import "SETextFieldView.h"
 #import "SEButton.h"
 
@@ -27,27 +28,13 @@
 #pragma mark -
 #pragma mark View lifecycle
 
-- (void)loadView
-{
-	CGRect windowBounds = [[UIScreen mainScreen] bounds];
-	
-	UIInterfaceOrientation orientation = [[UIApplication sharedApplication] statusBarOrientation];
-	if (orientation == UIDeviceOrientationPortrait || orientation == UIDeviceOrientationPortraitUpsideDown ) {}
-	else {}
-	
-	self.view = [[UIView alloc] initWithFrame:windowBounds];
-	self.view.autoresizesSubviews = YES;
-    self.view.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-    if (SYSTEM_VERSION_MIN_SDK_6)
-        [self.view setTranslatesAutoresizingMaskIntoConstraints:NO];
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	
-	[self.navigationController setNavigationBarHidden:YES];
+//	[self.navigationController setNavigationBarHidden:YES];
 	
+	self.title = @"Login";
 	[self.view addSubview:self.dropBackgroundView];
 	[self.view addSubview:self.loginField];
 	[self.view addSubview:self.passwordField];
@@ -60,7 +47,9 @@
 	[self.passwordField resignKeyboard];
 	
 	// TODO: login
-	// TODO: go to discover page
+
+	SEDiscoverViewController *nextVC = [[SEDiscoverViewController alloc] init];
+	[self pushNewController:nextVC];
 }
 
 #pragma mark -
@@ -78,7 +67,7 @@
 - (SETextFieldView *)loginField
 {
 	CREATE_THREAD_SAFE_INSTANCE(_loginField, ^{
-		_loginField = [[SETextFieldView alloc] initWithFrame:CGRectMake((__blockself.view.bounds.size.width - UI_WIDTH) / 2.0f, UI_HEIGHT, UI_WIDTH, UI_HEIGHT)];
+		_loginField = [[SETextFieldView alloc] initWithFrame:CGRectMake((__blockself.view.bounds.size.width - UI_WIDTH) / 2.0f, 80, UI_WIDTH, UI_HEIGHT)];
 		_loginField.textField.placeholder = @"Email";
 	});
 }
@@ -86,7 +75,7 @@
 - (SETextFieldView *)passwordField
 {
 	CREATE_THREAD_SAFE_INSTANCE(_passwordField, ^{
-		_passwordField = [[SETextFieldView alloc] initWithFrame:CGRectMake((__blockself.view.bounds.size.width - UI_WIDTH) / 2.0f, UI_HEIGHT * 2 + 10, UI_WIDTH, UI_HEIGHT)];
+		_passwordField = [[SETextFieldView alloc] initWithFrame:CGRectMake((__blockself.view.bounds.size.width - UI_WIDTH) / 2.0f, 80 + UI_HEIGHT + 10, UI_WIDTH, UI_HEIGHT)];
 		_passwordField.textField.placeholder = @"Password";
 		_passwordField.textField.secureTextEntry = YES;
 	});
@@ -96,7 +85,7 @@
 {
 	CREATE_THREAD_SAFE_INSTANCE(_loginButton, ^{
 		_loginButton = [[SEButton alloc] initWithTitle:@"Login" andTarget:self andAction:@selector(loginButtonPressed)];
-		_loginButton.frame = CGRectMake((__blockself.view.bounds.size.width - UI_WIDTH) / 2.0f, UI_HEIGHT * 3 + 20, UI_WIDTH, UI_HEIGHT);
+		_loginButton.frame = CGRectMake((__blockself.view.bounds.size.width - UI_WIDTH) / 2.0f, 80 + (UI_HEIGHT + 10) * 2, UI_WIDTH, UI_HEIGHT);
 	});
 }
 

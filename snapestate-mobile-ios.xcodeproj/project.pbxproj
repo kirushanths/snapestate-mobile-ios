@@ -19,6 +19,7 @@
 		BC11A5CF188B6F120002D8D3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC11A5B7188B6F120002D8D3 /* UIKit.framework */; };
 		BC11A5D7188B6F120002D8D3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BC11A5D5188B6F120002D8D3 /* InfoPlist.strings */; };
 		BC11A5D9188B6F120002D8D3 /* snapestate_mobile_iosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC11A5D8188B6F120002D8D3 /* snapestate_mobile_iosTests.m */; };
+		BC5412A3189DED8900BC0D68 /* SEDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5412A2189DED8900BC0D68 /* SEDiscoverViewController.m */; };
 		BC5837E8188B881300301C53 /* libFlurry_4.3.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC58369E188B881200301C53 /* libFlurry_4.3.0.a */; };
 		BC5837E9188B881300301C53 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5836A1188B881200301C53 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		BC583871188B881300301C53 /* PhoneFormats.dat in Resources */ = {isa = PBXBuildFile; fileRef = BC5837B4188B881300301C53 /* PhoneFormats.dat */; };
@@ -130,6 +131,8 @@
 		BC11A5D4188B6F120002D8D3 /* snapestate-mobile-iosTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "snapestate-mobile-iosTests-Info.plist"; sourceTree = "<group>"; };
 		BC11A5D6188B6F120002D8D3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BC11A5D8188B6F120002D8D3 /* snapestate_mobile_iosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = snapestate_mobile_iosTests.m; sourceTree = "<group>"; };
+		BC5412A1189DED8900BC0D68 /* SEDiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEDiscoverViewController.h; sourceTree = "<group>"; };
+		BC5412A2189DED8900BC0D68 /* SEDiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEDiscoverViewController.m; sourceTree = "<group>"; };
 		BC58369D188B881200301C53 /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flurry.h; sourceTree = "<group>"; };
 		BC58369E188B881200301C53 /* libFlurry_4.3.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry_4.3.0.a; sourceTree = "<group>"; };
 		BC5836A0188B881200301C53 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
@@ -486,6 +489,8 @@
 				BC5838EB188CA59900301C53 /* SELoginViewController.m */,
 				BC5838EF188CA84A00301C53 /* SENavigationViewController.h */,
 				BC5838F0188CA84A00301C53 /* SENavigationViewController.m */,
+				BC5412A1189DED8900BC0D68 /* SEDiscoverViewController.h */,
+				BC5412A2189DED8900BC0D68 /* SEDiscoverViewController.m */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -728,6 +733,7 @@
 				BCE1B881189DE99300BA0624 /* SEButton.m in Sources */,
 				BC58387E188B881300301C53 /* NSError+Additions.m in Sources */,
 				BC5838EC188CA59900301C53 /* SELoginViewController.m in Sources */,
+				BC5412A3189DED8900BC0D68 /* SEDiscoverViewController.m in Sources */,
 				BC583872188B881300301C53 /* RMPhoneFormat.m in Sources */,
 				BC11A5C4188B6F120002D8D3 /* SEAppDelegate.m in Sources */,
 				BC583879188B881300301C53 /* UIDevice-Capabilities.m in Sources */,

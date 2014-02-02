@@ -19,6 +19,21 @@
 #pragma mark -
 #pragma mark View LifeCycle
 
+- (void)loadView
+{
+	CGRect windowBounds = [[UIScreen mainScreen] bounds];
+	
+	UIInterfaceOrientation orientation = [[UIApplication sharedApplication] statusBarOrientation];
+	if (orientation == UIDeviceOrientationPortrait || orientation == UIDeviceOrientationPortraitUpsideDown ) {}
+	else {}
+	
+	self.view = [[UIView alloc] initWithFrame:windowBounds];
+	self.view.autoresizesSubviews = YES;
+    self.view.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    if (SYSTEM_VERSION_MIN_SDK_6)
+        [self.view setTranslatesAutoresizingMaskIntoConstraints:NO];
+}
+
 -(void)viewDidUnload
 {
 	[super viewDidUnload];
