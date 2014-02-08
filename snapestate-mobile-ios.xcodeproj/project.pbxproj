@@ -64,9 +64,16 @@
 		BC5838F1188CA84A00301C53 /* SENavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5838F0188CA84A00301C53 /* SENavigationViewController.m */; };
 		BC5838F5188CC7E400301C53 /* loginbg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC5838F3188CC7E400301C53 /* loginbg@2x.png */; };
 		BC5838F6188CC7E400301C53 /* loginbgraw.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BC5838F4188CC7E400301C53 /* loginbgraw.jpg */; };
-		BCE1B878189DE7F100BA0624 /* SETextFieldView.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE1B877189DE7F100BA0624 /* SETextFieldView.m */; };
-		BCE1B87E189DE83400BA0624 /* SETextField.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE1B87D189DE83400BA0624 /* SETextField.m */; };
-		BCE1B881189DE99300BA0624 /* SEButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE1B880189DE99300BA0624 /* SEButton.m */; };
+		BCED8EFC18A6AD23003AC386 /* SEBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BCED8EED18A6AD23003AC386 /* SEBaseCell.m */; };
+		BCED8EFD18A6AD23003AC386 /* SEButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BCED8EEF18A6AD23003AC386 /* SEButton.m */; };
+		BCED8EFE18A6AD23003AC386 /* SETextField.m in Sources */ = {isa = PBXBuildFile; fileRef = BCED8EF118A6AD23003AC386 /* SETextField.m */; };
+		BCED8EFF18A6AD23003AC386 /* SETextFieldView.m in Sources */ = {isa = PBXBuildFile; fileRef = BCED8EF318A6AD23003AC386 /* SETextFieldView.m */; };
+		BCED8F0018A6AD23003AC386 /* SEAccessoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = BCED8EF518A6AD23003AC386 /* SEAccessoryView.m */; };
+		BCED8F0118A6AD23003AC386 /* SECellBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = BCED8EF718A6AD23003AC386 /* SECellBackground.m */; };
+		BCED8F0218A6AD23003AC386 /* SECheckbox.m in Sources */ = {isa = PBXBuildFile; fileRef = BCED8EF918A6AD23003AC386 /* SECheckbox.m */; };
+		BCED8F0318A6AD23003AC386 /* SERowSeparator.m in Sources */ = {isa = PBXBuildFile; fileRef = BCED8EFB18A6AD23003AC386 /* SERowSeparator.m */; };
+		BCED8F0618A6AE34003AC386 /* SEDiscoverCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BCED8F0518A6AE34003AC386 /* SEDiscoverCell.m */; };
+		BCED8F0818A6B1FB003AC386 /* discoverbg@2x.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BCED8F0718A6B1FB003AC386 /* discoverbg@2x.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -207,12 +214,25 @@
 		BC5838F0188CA84A00301C53 /* SENavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SENavigationViewController.m; sourceTree = "<group>"; };
 		BC5838F3188CC7E400301C53 /* loginbg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "loginbg@2x.png"; sourceTree = "<group>"; };
 		BC5838F4188CC7E400301C53 /* loginbgraw.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = loginbgraw.jpg; sourceTree = "<group>"; };
-		BCE1B876189DE7F100BA0624 /* SETextFieldView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SETextFieldView.h; sourceTree = "<group>"; };
-		BCE1B877189DE7F100BA0624 /* SETextFieldView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SETextFieldView.m; sourceTree = "<group>"; };
-		BCE1B87C189DE83400BA0624 /* SETextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SETextField.h; sourceTree = "<group>"; };
-		BCE1B87D189DE83400BA0624 /* SETextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SETextField.m; sourceTree = "<group>"; };
-		BCE1B87F189DE99300BA0624 /* SEButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEButton.h; sourceTree = "<group>"; };
-		BCE1B880189DE99300BA0624 /* SEButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEButton.m; sourceTree = "<group>"; };
+		BCED8EEC18A6AD23003AC386 /* SEBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEBaseCell.h; sourceTree = "<group>"; };
+		BCED8EED18A6AD23003AC386 /* SEBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEBaseCell.m; sourceTree = "<group>"; };
+		BCED8EEE18A6AD23003AC386 /* SEButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEButton.h; sourceTree = "<group>"; };
+		BCED8EEF18A6AD23003AC386 /* SEButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEButton.m; sourceTree = "<group>"; };
+		BCED8EF018A6AD23003AC386 /* SETextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SETextField.h; sourceTree = "<group>"; };
+		BCED8EF118A6AD23003AC386 /* SETextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SETextField.m; sourceTree = "<group>"; };
+		BCED8EF218A6AD23003AC386 /* SETextFieldView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SETextFieldView.h; sourceTree = "<group>"; };
+		BCED8EF318A6AD23003AC386 /* SETextFieldView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SETextFieldView.m; sourceTree = "<group>"; };
+		BCED8EF418A6AD23003AC386 /* SEAccessoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEAccessoryView.h; sourceTree = "<group>"; };
+		BCED8EF518A6AD23003AC386 /* SEAccessoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEAccessoryView.m; sourceTree = "<group>"; };
+		BCED8EF618A6AD23003AC386 /* SECellBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SECellBackground.h; sourceTree = "<group>"; };
+		BCED8EF718A6AD23003AC386 /* SECellBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SECellBackground.m; sourceTree = "<group>"; };
+		BCED8EF818A6AD23003AC386 /* SECheckbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SECheckbox.h; sourceTree = "<group>"; };
+		BCED8EF918A6AD23003AC386 /* SECheckbox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SECheckbox.m; sourceTree = "<group>"; };
+		BCED8EFA18A6AD23003AC386 /* SERowSeparator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SERowSeparator.h; sourceTree = "<group>"; };
+		BCED8EFB18A6AD23003AC386 /* SERowSeparator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SERowSeparator.m; sourceTree = "<group>"; };
+		BCED8F0418A6AE34003AC386 /* SEDiscoverCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEDiscoverCell.h; sourceTree = "<group>"; };
+		BCED8F0518A6AE34003AC386 /* SEDiscoverCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEDiscoverCell.m; sourceTree = "<group>"; };
+		BCED8F0718A6B1FB003AC386 /* discoverbg@2x.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "discoverbg@2x.jpeg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -522,12 +542,8 @@
 		BC5837E7188B881300301C53 /* views */ = {
 			isa = PBXGroup;
 			children = (
-				BCE1B876189DE7F100BA0624 /* SETextFieldView.h */,
-				BCE1B877189DE7F100BA0624 /* SETextFieldView.m */,
-				BCE1B87C189DE83400BA0624 /* SETextField.h */,
-				BCE1B87D189DE83400BA0624 /* SETextField.m */,
-				BCE1B87F189DE99300BA0624 /* SEButton.h */,
-				BCE1B880189DE99300BA0624 /* SEButton.m */,
+				BCED8EEA18A6AD23003AC386 /* discover */,
+				BCED8EEB18A6AD23003AC386 /* core */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -583,10 +599,43 @@
 		BC5838F2188CC7E400301C53 /* backgrounds */ = {
 			isa = PBXGroup;
 			children = (
+				BCED8F0718A6B1FB003AC386 /* discoverbg@2x.jpeg */,
 				BC5838F3188CC7E400301C53 /* loginbg@2x.png */,
 				BC5838F4188CC7E400301C53 /* loginbgraw.jpg */,
 			);
 			path = backgrounds;
+			sourceTree = "<group>";
+		};
+		BCED8EEA18A6AD23003AC386 /* discover */ = {
+			isa = PBXGroup;
+			children = (
+				BCED8F0418A6AE34003AC386 /* SEDiscoverCell.h */,
+				BCED8F0518A6AE34003AC386 /* SEDiscoverCell.m */,
+			);
+			path = discover;
+			sourceTree = "<group>";
+		};
+		BCED8EEB18A6AD23003AC386 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				BCED8EEC18A6AD23003AC386 /* SEBaseCell.h */,
+				BCED8EED18A6AD23003AC386 /* SEBaseCell.m */,
+				BCED8EEE18A6AD23003AC386 /* SEButton.h */,
+				BCED8EEF18A6AD23003AC386 /* SEButton.m */,
+				BCED8EF018A6AD23003AC386 /* SETextField.h */,
+				BCED8EF118A6AD23003AC386 /* SETextField.m */,
+				BCED8EF218A6AD23003AC386 /* SETextFieldView.h */,
+				BCED8EF318A6AD23003AC386 /* SETextFieldView.m */,
+				BCED8EF418A6AD23003AC386 /* SEAccessoryView.h */,
+				BCED8EF518A6AD23003AC386 /* SEAccessoryView.m */,
+				BCED8EF618A6AD23003AC386 /* SECellBackground.h */,
+				BCED8EF718A6AD23003AC386 /* SECellBackground.m */,
+				BCED8EF818A6AD23003AC386 /* SECheckbox.h */,
+				BCED8EF918A6AD23003AC386 /* SECheckbox.m */,
+				BCED8EFA18A6AD23003AC386 /* SERowSeparator.h */,
+				BCED8EFB18A6AD23003AC386 /* SERowSeparator.m */,
+			);
+			path = core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -707,6 +756,7 @@
 				BC11A5BE188B6F120002D8D3 /* InfoPlist.strings in Resources */,
 				BC5838F5188CC7E400301C53 /* loginbg@2x.png in Resources */,
 				BC583871188B881300301C53 /* PhoneFormats.dat in Resources */,
+				BCED8F0818A6B1FB003AC386 /* discoverbg@2x.jpeg in Resources */,
 				BC11A5C6188B6F120002D8D3 /* Images.xcassets in Resources */,
 				BC5838F6188CC7E400301C53 /* loginbgraw.jpg in Resources */,
 			);
@@ -730,30 +780,36 @@
 				BC583875188B881300301C53 /* SDURLCache.m in Sources */,
 				BC583881188B881300301C53 /* UIImage+Additions.m in Sources */,
 				BC583880188B881300301C53 /* NSString+HTML.m in Sources */,
-				BCE1B881189DE99300BA0624 /* SEButton.m in Sources */,
+				BCED8EFD18A6AD23003AC386 /* SEButton.m in Sources */,
 				BC58387E188B881300301C53 /* NSError+Additions.m in Sources */,
 				BC5838EC188CA59900301C53 /* SELoginViewController.m in Sources */,
 				BC5412A3189DED8900BC0D68 /* SEDiscoverViewController.m in Sources */,
 				BC583872188B881300301C53 /* RMPhoneFormat.m in Sources */,
 				BC11A5C4188B6F120002D8D3 /* SEAppDelegate.m in Sources */,
 				BC583879188B881300301C53 /* UIDevice-Capabilities.m in Sources */,
-				BCE1B878189DE7F100BA0624 /* SETextFieldView.m in Sources */,
 				BC58387D188B881300301C53 /* UIDevice-Reachability.m in Sources */,
-				BCE1B87E189DE83400BA0624 /* SETextField.m in Sources */,
 				BC5838E5188B8AE600301C53 /* KeychainItemWrapper.m in Sources */,
 				BC583874188B881300301C53 /* SDCachedURLResponse.m in Sources */,
 				BC5838E6188B8AE600301C53 /* wwanconnect.c in Sources */,
 				BC583877188B881300301C53 /* UIScrollView+SVPullToRefresh.m in Sources */,
 				BC5838CC188B8A3C00301C53 /* GTMNSString+HTML.m in Sources */,
+				BCED8EFF18A6AD23003AC386 /* SETextFieldView.m in Sources */,
+				BCED8EFE18A6AD23003AC386 /* SETextField.m in Sources */,
 				BC583882188B881300301C53 /* UILabel+FlexibleHeight.m in Sources */,
 				BC58387F188B881300301C53 /* NSString+Additions.m in Sources */,
+				BCED8F0218A6AD23003AC386 /* SECheckbox.m in Sources */,
+				BCED8F0618A6AE34003AC386 /* SEDiscoverCell.m in Sources */,
 				BC58387C188B881300301C53 /* UIDevice-Orientation.m in Sources */,
+				BCED8F0118A6AD23003AC386 /* SECellBackground.m in Sources */,
 				BC11A5C0188B6F120002D8D3 /* main.m in Sources */,
 				BC5837E9188B881300301C53 /* JSONKit.m in Sources */,
 				BC583876188B881300301C53 /* UIScrollView+SVInfiniteScrolling.m in Sources */,
 				BC58387A188B881300301C53 /* UIDevice-Hardware.m in Sources */,
 				BC5838E9188CA58600301C53 /* SEBaseViewController.m in Sources */,
+				BCED8EFC18A6AD23003AC386 /* SEBaseCell.m in Sources */,
 				BC5838F1188CA84A00301C53 /* SENavigationViewController.m in Sources */,
+				BCED8F0318A6AD23003AC386 /* SERowSeparator.m in Sources */,
+				BCED8F0018A6AD23003AC386 /* SEAccessoryView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

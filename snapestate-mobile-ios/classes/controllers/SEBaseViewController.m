@@ -32,6 +32,9 @@
     self.view.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     if (SYSTEM_VERSION_MIN_SDK_6)
         [self.view setTranslatesAutoresizingMaskIntoConstraints:NO];
+	
+	[[UINavigationBar appearance] setTintColor:[UIColor colorWithWhite:1.0f alpha:0.8f]];
+	[[UINavigationBar appearance] setBarTintColor:[UIColor colorWithWhite:1.0f alpha:0.8f]];
 }
 
 -(void)viewDidUnload
