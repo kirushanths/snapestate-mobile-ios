@@ -7,18 +7,18 @@
 //
 
 #import "UILabel+LatoFont.h"
-#import "THMConstants.h"
+#import "SEConstants.h"
 
 @implementation UILabel (LatoFont)
 
 -(void)setFontSize:(CGFloat)fontSize
 {
-	[self setFont:THM_FONT_LIGHT(fontSize)];
+	[self setFont:SE_FONT_LIGHT(fontSize)];
 }
 
 -(void)setFontRegularSize:(CGFloat)fontSize
 {
-	[self setFont:THM_FONT(fontSize)];
+	[self setFont:SE_FONT(fontSize)];
 }
 
 +(void)updateFontsinView:(UIView *)rootView
@@ -33,10 +33,10 @@
 			[label setFontSize:label.font.pointSize];
 		} else if ([view isMemberOfClass:[UITextField class]]) {
 			UITextField *textField = (UITextField *) view;
-			[textField setFont:THM_FONT_LIGHT(textField.font.pointSize)];
+			[textField setFont:SE_FONT_LIGHT(textField.font.pointSize)];
 		} else if ([view isMemberOfClass:[UITextView class]]) {
 			UITextView *textView = (UITextView *) view;
-			[textView setFont:THM_FONT_LIGHT(textView.font.pointSize)];
+			[textView setFont:SE_FONT_LIGHT(textView.font.pointSize)];
 		} else {
 			[UILabel updateFontsinView:view];
 		}
