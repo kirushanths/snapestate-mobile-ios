@@ -8,6 +8,8 @@
 #include "TargetConditionals.h"
 #include "SEMacros.h"
 #include "SEUIConstants.h"
+#import "UILabel+FlexibleHeight.h"
+#import "UILabel+LatoFont.h"
 
 #ifndef snapestate_mobile_ios_SEConstants_h
 #define snapestate_mobile_ios_SEConstants_h

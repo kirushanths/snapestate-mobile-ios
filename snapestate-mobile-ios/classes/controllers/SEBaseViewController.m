@@ -32,9 +32,20 @@
     self.view.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     if (SYSTEM_VERSION_MIN_SDK_6)
         [self.view setTranslatesAutoresizingMaskIntoConstraints:NO];
+}
+
+- (void)viewDidLoad
+{
+	[super viewDidLoad];
 	
-	[[UINavigationBar appearance] setTintColor:[UIColor colorWithWhite:1.0f alpha:0.8f]];
-	[[UINavigationBar appearance] setBarTintColor:[UIColor colorWithWhite:1.0f alpha:0.8f]];
+	self.navigationItem.hidesBackButton = YES;
+    self.navigationItem.backBarButtonItem = nil;
+    
+    UIButton *image = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 24, 20)];
+    [image setBackgroundImage:[UIImage imageNamed:@"icon_backdrk.png"] forState:UIControlStateNormal];
+    [image addTarget:self action:@selector(popViewController) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithCustomView:image];
+    self.navigationItem.leftBarButtonItem = backButton;
 }
 
 -(void)viewDidUnload

@@ -27,6 +27,20 @@
 	
 //	[self createAppearanceForNavigationController:navVC];
 	
+	NSShadow *shadow = [[NSShadow alloc] init];
+    shadow.shadowOffset = CGSizeZero;
+    shadow.shadowColor = [UIColor clearColor];
+
+	NSDictionary *attrs = @{ UITextAttributeTextColor: [UIColor darkGrayColor],
+							 UITextAttributeTextShadowColor: [UIColor clearColor],
+							 UITextAttributeTextShadowOffset: [NSValue valueWithUIOffset:UIOffsetMake(0.0f, 0.0f)],
+							 UITextAttributeFont: [UIFont fontWithName:@"Lato-Light" size:20.0f] };
+	
+	[[UINavigationBar appearance] setTitleTextAttributes:attrs];
+	
+	[[UINavigationBar appearance] setTintColor:[UIColor colorWithWhite:1.0f alpha:1.0f]];
+	[[UINavigationBar appearance] setBarTintColor:[UIColor colorWithWhite:1.0f alpha:1.0f]];
+	
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
