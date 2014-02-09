@@ -31,8 +31,15 @@
     self.contentView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
     self.contentView.autoresizesSubviews = YES;
     self.contentView.clipsToBounds = YES;
-    
-    UIView *bgColorView = [[UIView alloc] init];
+}
+
+-(void)designCell {}
+
+- (void)layoutSubviews
+{
+	[super layoutSubviews];
+	
+	UIView *bgColorView = [[UIView alloc] init];
 	[self setSelectedBackgroundView:bgColorView];
 	
 	UIView *bgView = [[UIView alloc] initWithFrame:self.frame];
@@ -41,8 +48,6 @@
     [self.contentView addSubview:self.cellBackground];
     [self.contentView addSubview:self.cellDivider];
 }
-
--(void)designCell {}
 
 #pragma mark -
 #pragma mark Selection / Highlight

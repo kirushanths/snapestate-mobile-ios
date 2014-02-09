@@ -20,9 +20,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	self.title = @"Discover";
+	self.title = @"DISCOVER";
 	self.view.backgroundColor = [UIColor whiteColor];
 	[self.view addSubview:self.tableView];
+	
+	UIBarButtonItem *searchIcon = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSearch target:nil action:nil];
+	self.navigationItem.rightBarButtonItem = searchIcon;
+	
+	[self setupDrawerButton];
 }
 
 #pragma mark -

@@ -64,6 +64,7 @@
 		BC5838F1188CA84A00301C53 /* SENavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5838F0188CA84A00301C53 /* SENavigationViewController.m */; };
 		BC5838F5188CC7E400301C53 /* loginbg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC5838F3188CC7E400301C53 /* loginbg@2x.png */; };
 		BC5838F6188CC7E400301C53 /* loginbgraw.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BC5838F4188CC7E400301C53 /* loginbgraw.jpg */; };
+		BC616EE318A706C5001FEA86 /* sidebg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC616EE218A706C5001FEA86 /* sidebg@2x.png */; };
 		BCED8EFC18A6AD23003AC386 /* SEBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BCED8EED18A6AD23003AC386 /* SEBaseCell.m */; };
 		BCED8EFD18A6AD23003AC386 /* SEButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BCED8EEF18A6AD23003AC386 /* SEButton.m */; };
 		BCED8EFE18A6AD23003AC386 /* SETextField.m in Sources */ = {isa = PBXBuildFile; fileRef = BCED8EF118A6AD23003AC386 /* SETextField.m */; };
@@ -89,6 +90,12 @@
 		BCED8F2718A6C066003AC386 /* icon_backdrk.png in Resources */ = {isa = PBXBuildFile; fileRef = BCED8F2518A6C066003AC386 /* icon_backdrk.png */; };
 		BCED8F2818A6C066003AC386 /* icon_backdrk@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BCED8F2618A6C066003AC386 /* icon_backdrk@2x.png */; };
 		BCED8F2A18A6C2BD003AC386 /* icon_heart@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BCED8F2918A6C2BD003AC386 /* icon_heart@2x.png */; };
+		BCED8F3518A6F00A003AC386 /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BCED8F2D18A6F00A003AC386 /* MMDrawerBarButtonItem.m */; };
+		BCED8F3618A6F00A003AC386 /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCED8F3018A6F00A003AC386 /* MMDrawerController.m */; };
+		BCED8F3718A6F00A003AC386 /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = BCED8F3218A6F00A003AC386 /* MMDrawerVisualState.m */; };
+		BCED8F3818A6F00A003AC386 /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCED8F3418A6F00A003AC386 /* UIViewController+MMDrawerController.m */; };
+		BCED8F3B18A6F1C6003AC386 /* SESideMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCED8F3A18A6F1C6003AC386 /* SESideMenuViewController.m */; };
+		BCED8F3F18A6F28B003AC386 /* SESideCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BCED8F3E18A6F28B003AC386 /* SESideCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -229,6 +236,7 @@
 		BC5838F0188CA84A00301C53 /* SENavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SENavigationViewController.m; sourceTree = "<group>"; };
 		BC5838F3188CC7E400301C53 /* loginbg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "loginbg@2x.png"; sourceTree = "<group>"; };
 		BC5838F4188CC7E400301C53 /* loginbgraw.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = loginbgraw.jpg; sourceTree = "<group>"; };
+		BC616EE218A706C5001FEA86 /* sidebg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sidebg@2x.png"; sourceTree = "<group>"; };
 		BCED8EEC18A6AD23003AC386 /* SEBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEBaseCell.h; sourceTree = "<group>"; };
 		BCED8EED18A6AD23003AC386 /* SEBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEBaseCell.m; sourceTree = "<group>"; };
 		BCED8EEE18A6AD23003AC386 /* SEButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEButton.h; sourceTree = "<group>"; };
@@ -264,6 +272,19 @@
 		BCED8F2518A6C066003AC386 /* icon_backdrk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_backdrk.png; sourceTree = "<group>"; };
 		BCED8F2618A6C066003AC386 /* icon_backdrk@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_backdrk@2x.png"; sourceTree = "<group>"; };
 		BCED8F2918A6C2BD003AC386 /* icon_heart@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_heart@2x.png"; sourceTree = "<group>"; };
+		BCED8F2C18A6F00A003AC386 /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
+		BCED8F2D18A6F00A003AC386 /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
+		BCED8F2E18A6F00A003AC386 /* MMDrawerController+Subclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMDrawerController+Subclass.h"; sourceTree = "<group>"; };
+		BCED8F2F18A6F00A003AC386 /* MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerController.h; sourceTree = "<group>"; };
+		BCED8F3018A6F00A003AC386 /* MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerController.m; sourceTree = "<group>"; };
+		BCED8F3118A6F00A003AC386 /* MMDrawerVisualState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerVisualState.h; sourceTree = "<group>"; };
+		BCED8F3218A6F00A003AC386 /* MMDrawerVisualState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerVisualState.m; sourceTree = "<group>"; };
+		BCED8F3318A6F00A003AC386 /* UIViewController+MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MMDrawerController.h"; sourceTree = "<group>"; };
+		BCED8F3418A6F00A003AC386 /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
+		BCED8F3918A6F1C6003AC386 /* SESideMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SESideMenuViewController.h; sourceTree = "<group>"; };
+		BCED8F3A18A6F1C6003AC386 /* SESideMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SESideMenuViewController.m; sourceTree = "<group>"; };
+		BCED8F3D18A6F28B003AC386 /* SESideCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SESideCell.h; sourceTree = "<group>"; };
+		BCED8F3E18A6F28B003AC386 /* SESideCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SESideCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -401,6 +422,7 @@
 		BC58369B188B881200301C53 /* vendor */ = {
 			isa = PBXGroup;
 			children = (
+				BCED8F2B18A6F00A003AC386 /* MMDrawerController */,
 				BC5838E0188B8AE600301C53 /* AppleSampleCode */,
 				BC5838CD188B8A7400301C53 /* RestKit */,
 				BC5838C7188B8A3C00301C53 /* GoogleToolbox */,
@@ -546,6 +568,8 @@
 				BC5838F0188CA84A00301C53 /* SENavigationViewController.m */,
 				BC5412A1189DED8900BC0D68 /* SEDiscoverViewController.h */,
 				BC5412A2189DED8900BC0D68 /* SEDiscoverViewController.m */,
+				BCED8F3918A6F1C6003AC386 /* SESideMenuViewController.h */,
+				BCED8F3A18A6F1C6003AC386 /* SESideMenuViewController.m */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -577,6 +601,7 @@
 		BC5837E7188B881300301C53 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				BCED8F3C18A6F280003AC386 /* sidemenu */,
 				BCED8EEA18A6AD23003AC386 /* discover */,
 				BCED8EEB18A6AD23003AC386 /* core */,
 			);
@@ -634,6 +659,7 @@
 		BC5838F2188CC7E400301C53 /* backgrounds */ = {
 			isa = PBXGroup;
 			children = (
+				BC616EE218A706C5001FEA86 /* sidebg@2x.png */,
 				BCED8F0718A6B1FB003AC386 /* discoverbg@2x.jpeg */,
 				BC5838F3188CC7E400301C53 /* loginbg@2x.png */,
 				BC5838F4188CC7E400301C53 /* loginbgraw.jpg */,
@@ -707,6 +733,31 @@
 				BCED8F2618A6C066003AC386 /* icon_backdrk@2x.png */,
 			);
 			path = icons;
+			sourceTree = "<group>";
+		};
+		BCED8F2B18A6F00A003AC386 /* MMDrawerController */ = {
+			isa = PBXGroup;
+			children = (
+				BCED8F2C18A6F00A003AC386 /* MMDrawerBarButtonItem.h */,
+				BCED8F2D18A6F00A003AC386 /* MMDrawerBarButtonItem.m */,
+				BCED8F2E18A6F00A003AC386 /* MMDrawerController+Subclass.h */,
+				BCED8F2F18A6F00A003AC386 /* MMDrawerController.h */,
+				BCED8F3018A6F00A003AC386 /* MMDrawerController.m */,
+				BCED8F3118A6F00A003AC386 /* MMDrawerVisualState.h */,
+				BCED8F3218A6F00A003AC386 /* MMDrawerVisualState.m */,
+				BCED8F3318A6F00A003AC386 /* UIViewController+MMDrawerController.h */,
+				BCED8F3418A6F00A003AC386 /* UIViewController+MMDrawerController.m */,
+			);
+			path = MMDrawerController;
+			sourceTree = "<group>";
+		};
+		BCED8F3C18A6F280003AC386 /* sidemenu */ = {
+			isa = PBXGroup;
+			children = (
+				BCED8F3D18A6F28B003AC386 /* SESideCell.h */,
+				BCED8F3E18A6F28B003AC386 /* SESideCell.m */,
+			);
+			path = sidemenu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -837,6 +888,7 @@
 				BCED8F1E18A6B566003AC386 /* Lato-LightItalic.ttf in Resources */,
 				BCED8F2018A6B566003AC386 /* OFL.txt in Resources */,
 				BCED8F1718A6B566003AC386 /* Lato-BlackItalic.ttf in Resources */,
+				BC616EE318A706C5001FEA86 /* sidebg@2x.png in Resources */,
 				BCED8F0818A6B1FB003AC386 /* discoverbg@2x.jpeg in Resources */,
 				BC11A5C6188B6F120002D8D3 /* Images.xcassets in Resources */,
 				BC5838F6188CC7E400301C53 /* loginbgraw.jpg in Resources */,
@@ -869,12 +921,14 @@
 				BC58387E188B881300301C53 /* NSError+Additions.m in Sources */,
 				BCED8F2318A6B5AC003AC386 /* UILabel+LatoFont.m in Sources */,
 				BC5838EC188CA59900301C53 /* SELoginViewController.m in Sources */,
+				BCED8F3818A6F00A003AC386 /* UIViewController+MMDrawerController.m in Sources */,
 				BC5412A3189DED8900BC0D68 /* SEDiscoverViewController.m in Sources */,
 				BC583872188B881300301C53 /* RMPhoneFormat.m in Sources */,
 				BC11A5C4188B6F120002D8D3 /* SEAppDelegate.m in Sources */,
 				BC583879188B881300301C53 /* UIDevice-Capabilities.m in Sources */,
 				BC58387D188B881300301C53 /* UIDevice-Reachability.m in Sources */,
 				BC5838E5188B8AE600301C53 /* KeychainItemWrapper.m in Sources */,
+				BCED8F3718A6F00A003AC386 /* MMDrawerVisualState.m in Sources */,
 				BC583874188B881300301C53 /* SDCachedURLResponse.m in Sources */,
 				BC5838E6188B8AE600301C53 /* wwanconnect.c in Sources */,
 				BC583877188B881300301C53 /* UIScrollView+SVPullToRefresh.m in Sources */,
@@ -888,13 +942,17 @@
 				BC58387C188B881300301C53 /* UIDevice-Orientation.m in Sources */,
 				BCED8F0118A6AD23003AC386 /* SECellBackground.m in Sources */,
 				BC11A5C0188B6F120002D8D3 /* main.m in Sources */,
+				BCED8F3F18A6F28B003AC386 /* SESideCell.m in Sources */,
 				BC5837E9188B881300301C53 /* JSONKit.m in Sources */,
+				BCED8F3518A6F00A003AC386 /* MMDrawerBarButtonItem.m in Sources */,
 				BC583876188B881300301C53 /* UIScrollView+SVInfiniteScrolling.m in Sources */,
 				BC58387A188B881300301C53 /* UIDevice-Hardware.m in Sources */,
 				BC5838E9188CA58600301C53 /* SEBaseViewController.m in Sources */,
 				BCED8EFC18A6AD23003AC386 /* SEBaseCell.m in Sources */,
 				BC5838F1188CA84A00301C53 /* SENavigationViewController.m in Sources */,
 				BCED8F0318A6AD23003AC386 /* SERowSeparator.m in Sources */,
+				BCED8F3618A6F00A003AC386 /* MMDrawerController.m in Sources */,
+				BCED8F3B18A6F1C6003AC386 /* SESideMenuViewController.m in Sources */,
 				BCED8F0018A6AD23003AC386 /* SEAccessoryView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

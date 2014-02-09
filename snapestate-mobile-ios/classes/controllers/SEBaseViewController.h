@@ -18,18 +18,25 @@
 #pragma mark -
 #pragma mark Navigation
 
--(void)pushNewController:(UIViewController *)viewController;
--(void)pushNewController:(UIViewController *)viewController animated:(BOOL)animated;
--(void)popViewController;
+- (void)pushNewController:(UIViewController *)viewController;
+- (void)pushNewController:(UIViewController *)viewController animated:(BOOL)animated;
+- (void)popViewController;
+
+#pragma mark -
+#pragma mark Side Menu
+
+- (void)setupDrawerButton;
+- (void)openDrawer;
+- (void)closeDrawerWithCompletion:(void (^)(BOOL finished))completion;
 
 #pragma mark -
 #pragma mark Keyboard Events
 
--(void)registerKeyboardEvents;
--(void)removeKeyboardEvents;
--(void)keyboardWillShow:(NSNotification *)aNotification;
--(void)keyboardWillHide:(NSNotification *)aNotification;
--(void)keyboardWillToggle:(BOOL)willShow withNotification:(NSNotification *)aNotification animate:(BOOL)animate;
+- (void)registerKeyboardEvents;
+- (void)removeKeyboardEvents;
+- (void)keyboardWillShow:(NSNotification *)aNotification;
+- (void)keyboardWillHide:(NSNotification *)aNotification;
+- (void)keyboardWillToggle:(BOOL)willShow withNotification:(NSNotification *)aNotification animate:(BOOL)animate;
 
 
 @end

@@ -28,15 +28,10 @@
 
 @implementation SEDiscoverCell
 
-- (void)designCell
-{
-	[super designCell];
-	[self.cellBackground addSubview:self.discoverImage];
-}
-
 - (void)layoutSubviews
 {
 	[super layoutSubviews];
+	[self.cellBackground addSubview:self.discoverImage];
 	[self.cellBackground addSubview:self.shadowFade];
 	[self.cellBackground addSubview:self.heartIcon];
 	[self.cellBackground addSubview:self.cityLabel];

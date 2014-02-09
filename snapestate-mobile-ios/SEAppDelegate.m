@@ -11,6 +11,9 @@
 #import "SEConstants.h"
 #import "SENavigationViewController.h"
 #import "SELoginViewController.h"
+#import "MMDrawerController.h"
+#import "SESideMenuViewController.h"
+#import "MMDrawerVisualState.h"
 
 @implementation SEAppDelegate
 
@@ -24,6 +27,16 @@
 	
 	SELoginViewController *loginVC = [[SELoginViewController alloc] init];
 	SENavigationViewController *navVC = [[SENavigationViewController alloc] initWithRootViewController:loginVC];
+	SESideMenuViewController *sideVC = [[SESideMenuViewController alloc] init];
+	
+	MMDrawerController *drawerVC = [[MMDrawerController alloc] initWithCenterViewController:navVC
+																   leftDrawerViewController:sideVC
+																  rightDrawerViewController:nil];
+	[drawerVC setRestorationIdentifier:@"MMDrawer"];
+	[drawerVC setMaximumLeftDrawerWidth:200.0f];
+    [drawerVC setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeBezelPanningCenterView];
+    [drawerVC setCloseDrawerGestureModeMask:MMCloseDrawerGestureModeAll];
+	[drawerVC setDrawerVisualStateBlock:[MMDrawerVisualState parallaxVisualStateBlockWithParallaxFactor:5]];
 	
 //	[self createAppearanceForNavigationController:navVC];
 	
@@ -31,22 +44,26 @@
     shadow.shadowOffset = CGSizeZero;
     shadow.shadowColor = [UIColor clearColor];
 
-	NSDictionary *attrs = @{ UITextAttributeTextColor: [UIColor darkGrayColor],
+	NSDictionary *attrs = @{ UITextAttributeTextColor: [UIColor colorWithWhite:0.1f alpha:1.0f],
 							 UITextAttributeTextShadowColor: [UIColor clearColor],
 							 UITextAttributeTextShadowOffset: [NSValue valueWithUIOffset:UIOffsetMake(0.0f, 0.0f)],
-							 UITextAttributeFont: [UIFont fontWithName:@"Lato-Light" size:20.0f] };
+							 UITextAttributeFont: [UIFont fontWithName:@"Lato-Regular" size:18.0f] };
 	
 	[[UINavigationBar appearance] setTitleTextAttributes:attrs];
 	
-	[[UINavigationBar appearance] setTintColor:[UIColor colorWithWhite:1.0f alpha:1.0f]];
-	[[UINavigationBar appearance] setBarTintColor:[UIColor colorWithWhite:1.0f alpha:1.0f]];
+	if (SYSTEM_VERSION_MIN_SDK_7) {
+		[[UINavigationBar appearance] setTintColor:[UIColor colorWithWhite:0.0f alpha:1.0f]];
+		[[UINavigationBar appearance] setBarTintColor:[UIColor colorWithWhite:1.0f alpha:1.0f]];
+	} else {
+		[[UINavigationBar appearance] setTintColor:[UIColor colorWithWhite:1.0f alpha:1.0f]];
+	}
 	
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
-	self.window.rootViewController = navVC;
-	
+	if (SYSTEM_VERSION_MIN_SDK_7)
+		[self.window setTintColor:[UIColor whiteColor]];
+	self.window.rootViewController = drawerVC;
+	self.window.backgroundColor = [UIColor whiteColor];
+	[self.window makeKeyAndVisible];
     return YES;
 }
 
