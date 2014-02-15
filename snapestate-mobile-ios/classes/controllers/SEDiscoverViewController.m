@@ -21,7 +21,7 @@
 {
     [super viewDidLoad];
 	self.title = @"DISCOVER";
-	self.view.backgroundColor = [UIColor whiteColor];
+	self.view.backgroundColor = self.tableView.backgroundColor = SE_COLOR_GRAY_BLUE_DARK;
 	[self.view addSubview:self.tableView];
 	
 	UIBarButtonItem *searchIcon = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSearch target:nil action:nil];

@@ -6,8 +6,8 @@
 //  Copyright (c) 2014 SnapEstate. All rights reserved.
 //
 
-#import "SEBaseViewController.h"
+#import "KSBaseViewController.h"
 
-@interface SESideMenuViewController : SEBaseViewController
+@interface SESideMenuViewController : KSBaseViewController
 
 @end

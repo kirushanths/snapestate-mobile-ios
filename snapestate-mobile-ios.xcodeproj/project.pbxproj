@@ -20,7 +20,6 @@
 		BC11A5D7188B6F120002D8D3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BC11A5D5188B6F120002D8D3 /* InfoPlist.strings */; };
 		BC11A5D9188B6F120002D8D3 /* snapestate_mobile_iosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC11A5D8188B6F120002D8D3 /* snapestate_mobile_iosTests.m */; };
 		BC5412A3189DED8900BC0D68 /* SEDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5412A2189DED8900BC0D68 /* SEDiscoverViewController.m */; };
-		BC5837E8188B881300301C53 /* libFlurry_4.3.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC58369E188B881200301C53 /* libFlurry_4.3.0.a */; };
 		BC5837E9188B881300301C53 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5836A1188B881200301C53 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		BC583871188B881300301C53 /* PhoneFormats.dat in Resources */ = {isa = PBXBuildFile; fileRef = BC5837B4188B881300301C53 /* PhoneFormats.dat */; };
 		BC583872188B881300301C53 /* RMPhoneFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5837B6188B881300301C53 /* RMPhoneFormat.m */; };
@@ -59,7 +58,7 @@
 		BC5838DF188B8A9A00301C53 /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC5838D6188B8A8100301C53 /* libRestKit.a */; };
 		BC5838E5188B8AE600301C53 /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5838E2188B8AE600301C53 /* KeychainItemWrapper.m */; };
 		BC5838E6188B8AE600301C53 /* wwanconnect.c in Sources */ = {isa = PBXBuildFile; fileRef = BC5838E3188B8AE600301C53 /* wwanconnect.c */; };
-		BC5838E9188CA58600301C53 /* SEBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5838E8188CA58600301C53 /* SEBaseViewController.m */; };
+		BC5838E9188CA58600301C53 /* KSBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5838E8188CA58600301C53 /* KSBaseViewController.m */; };
 		BC5838EC188CA59900301C53 /* SELoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5838EB188CA59900301C53 /* SELoginViewController.m */; };
 		BC5838F1188CA84A00301C53 /* SENavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5838F0188CA84A00301C53 /* SENavigationViewController.m */; };
 		BC5838F5188CC7E400301C53 /* loginbg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC5838F3188CC7E400301C53 /* loginbg@2x.png */; };
@@ -162,8 +161,6 @@
 		BC11A5D8188B6F120002D8D3 /* snapestate_mobile_iosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = snapestate_mobile_iosTests.m; sourceTree = "<group>"; };
 		BC5412A1189DED8900BC0D68 /* SEDiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEDiscoverViewController.h; sourceTree = "<group>"; };
 		BC5412A2189DED8900BC0D68 /* SEDiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEDiscoverViewController.m; sourceTree = "<group>"; };
-		BC58369D188B881200301C53 /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flurry.h; sourceTree = "<group>"; };
-		BC58369E188B881200301C53 /* libFlurry_4.3.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry_4.3.0.a; sourceTree = "<group>"; };
 		BC5836A0188B881200301C53 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
 		BC5836A1188B881200301C53 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
 		BC5837B4188B881300301C53 /* PhoneFormats.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = PhoneFormats.dat; sourceTree = "<group>"; };
@@ -228,8 +225,8 @@
 		BC5838E2188B8AE600301C53 /* KeychainItemWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainItemWrapper.m; sourceTree = "<group>"; };
 		BC5838E3188B8AE600301C53 /* wwanconnect.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wwanconnect.c; sourceTree = "<group>"; };
 		BC5838E4188B8AE600301C53 /* wwanconnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wwanconnect.h; sourceTree = "<group>"; };
-		BC5838E7188CA58600301C53 /* SEBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEBaseViewController.h; sourceTree = "<group>"; };
-		BC5838E8188CA58600301C53 /* SEBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEBaseViewController.m; sourceTree = "<group>"; };
+		BC5838E7188CA58600301C53 /* KSBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSBaseViewController.h; sourceTree = "<group>"; };
+		BC5838E8188CA58600301C53 /* KSBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSBaseViewController.m; sourceTree = "<group>"; };
 		BC5838EA188CA59900301C53 /* SELoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SELoginViewController.h; sourceTree = "<group>"; };
 		BC5838EB188CA59900301C53 /* SELoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SELoginViewController.m; sourceTree = "<group>"; };
 		BC5838EF188CA84A00301C53 /* SENavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SENavigationViewController.h; sourceTree = "<group>"; };
@@ -311,7 +308,6 @@
 				BC5838A8188B899E00301C53 /* CFNetwork.framework in Frameworks */,
 				BC583878188B881300301C53 /* libTestFlight.a in Frameworks */,
 				BC11A5B6188B6F120002D8D3 /* CoreGraphics.framework in Frameworks */,
-				BC5837E8188B881300301C53 /* libFlurry_4.3.0.a in Frameworks */,
 				BC11A5B8188B6F120002D8D3 /* UIKit.framework in Frameworks */,
 				BC11A5B4188B6F120002D8D3 /* Foundation.framework in Frameworks */,
 			);
@@ -426,7 +422,6 @@
 				BC5838E0188B8AE600301C53 /* AppleSampleCode */,
 				BC5838CD188B8A7400301C53 /* RestKit */,
 				BC5838C7188B8A3C00301C53 /* GoogleToolbox */,
-				BC58369C188B881200301C53 /* Flurry */,
 				BC58369F188B881200301C53 /* JSONKit */,
 				BC5837B3188B881300301C53 /* RMPhoneFormat */,
 				BC5837B7188B881300301C53 /* SDURLCache */,
@@ -435,15 +430,6 @@
 				BC5837C8188B881300301C53 /* UIDeviceExtension */,
 			);
 			path = vendor;
-			sourceTree = "<group>";
-		};
-		BC58369C188B881200301C53 /* Flurry */ = {
-			isa = PBXGroup;
-			children = (
-				BC58369D188B881200301C53 /* Flurry.h */,
-				BC58369E188B881200301C53 /* libFlurry_4.3.0.a */,
-			);
-			path = Flurry;
 			sourceTree = "<group>";
 		};
 		BC58369F188B881200301C53 /* JSONKit */ = {
@@ -560,8 +546,8 @@
 		BC5837E0188B881300301C53 /* controllers */ = {
 			isa = PBXGroup;
 			children = (
-				BC5838E7188CA58600301C53 /* SEBaseViewController.h */,
-				BC5838E8188CA58600301C53 /* SEBaseViewController.m */,
+				BC5838E7188CA58600301C53 /* KSBaseViewController.h */,
+				BC5838E8188CA58600301C53 /* KSBaseViewController.m */,
 				BC5838EA188CA59900301C53 /* SELoginViewController.h */,
 				BC5838EB188CA59900301C53 /* SELoginViewController.m */,
 				BC5838EF188CA84A00301C53 /* SENavigationViewController.h */,
@@ -947,7 +933,7 @@
 				BCED8F3518A6F00A003AC386 /* MMDrawerBarButtonItem.m in Sources */,
 				BC583876188B881300301C53 /* UIScrollView+SVInfiniteScrolling.m in Sources */,
 				BC58387A188B881300301C53 /* UIDevice-Hardware.m in Sources */,
-				BC5838E9188CA58600301C53 /* SEBaseViewController.m in Sources */,
+				BC5838E9188CA58600301C53 /* KSBaseViewController.m in Sources */,
 				BCED8EFC18A6AD23003AC386 /* SEBaseCell.m in Sources */,
 				BC5838F1188CA84A00301C53 /* SENavigationViewController.m in Sources */,
 				BCED8F0318A6AD23003AC386 /* SERowSeparator.m in Sources */,

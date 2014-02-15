@@ -7,7 +7,6 @@
 //
 
 #import "SEAppDelegate.h"
-#import "Flurry.h"
 #import "SEConstants.h"
 #import "SENavigationViewController.h"
 #import "SELoginViewController.h"
@@ -18,13 +17,7 @@
 @implementation SEAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
-#ifdef SE_DEBUG
-#else
-	[Flurry setCrashReportingEnabled:YES];
-	[Flurry startSession:FLURRY_TOKEN];
-#endif
-	
+{	
 	SELoginViewController *loginVC = [[SELoginViewController alloc] init];
 	SENavigationViewController *navVC = [[SENavigationViewController alloc] initWithRootViewController:loginVC];
 	SESideMenuViewController *sideVC = [[SESideMenuViewController alloc] init];
@@ -38,33 +31,42 @@
     [drawerVC setCloseDrawerGestureModeMask:MMCloseDrawerGestureModeAll];
 	[drawerVC setDrawerVisualStateBlock:[MMDrawerVisualState parallaxVisualStateBlockWithParallaxFactor:5]];
 	
-//	[self createAppearanceForNavigationController:navVC];
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+	self.window.rootViewController = drawerVC;
+	
+	[self styleApplication];
+	
+	self.window.backgroundColor = SE_COLOR_GRAY_BLUE_DARK;
+	[self.window makeKeyAndVisible];
+    return YES;
+}
+
+-(void)styleApplication
+{
+	UIColor *navColor = SE_COLOR_BLUE;
+	UIColor *textColor = [UIColor whiteColor];
 	
 	NSShadow *shadow = [[NSShadow alloc] init];
     shadow.shadowOffset = CGSizeZero;
     shadow.shadowColor = [UIColor clearColor];
-
-	NSDictionary *attrs = @{ UITextAttributeTextColor: [UIColor colorWithWhite:0.1f alpha:1.0f],
+	
+	NSDictionary *attrs = @{ UITextAttributeTextColor: textColor,
 							 UITextAttributeTextShadowColor: [UIColor clearColor],
 							 UITextAttributeTextShadowOffset: [NSValue valueWithUIOffset:UIOffsetMake(0.0f, 0.0f)],
 							 UITextAttributeFont: [UIFont fontWithName:@"Lato-Regular" size:18.0f] };
 	
 	[[UINavigationBar appearance] setTitleTextAttributes:attrs];
+	[[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
 	
 	if (SYSTEM_VERSION_MIN_SDK_7) {
-		[[UINavigationBar appearance] setTintColor:[UIColor colorWithWhite:0.0f alpha:1.0f]];
-		[[UINavigationBar appearance] setBarTintColor:[UIColor colorWithWhite:1.0f alpha:1.0f]];
+		[[UINavigationBar appearance] setTintColor:textColor];
+		[[UINavigationBar appearance] setBarTintColor:navColor];
 	} else {
-		[[UINavigationBar appearance] setTintColor:[UIColor colorWithWhite:1.0f alpha:1.0f]];
+		[[UINavigationBar appearance] setTintColor:navColor];
 	}
 	
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 	if (SYSTEM_VERSION_MIN_SDK_7)
-		[self.window setTintColor:[UIColor whiteColor]];
-	self.window.rootViewController = drawerVC;
-	self.window.backgroundColor = [UIColor whiteColor];
-	[self.window makeKeyAndVisible];
-    return YES;
+		[self.window setTintColor:navColor];
 }
 
 -(void)createAppearanceForNavigationController:(UINavigationController *)naviVC

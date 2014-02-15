@@ -10,7 +10,7 @@
 #import "SEConstants.h"
 #import "SEMacros.h"
 
-@interface SEBaseViewController : UIViewController
+@interface KSBaseViewController : UIViewController
 
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (strong, nonatomic) IBOutlet UIView *contentView;

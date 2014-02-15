@@ -6,17 +6,17 @@
 //  Copyright (c) 2014 SnapEstate. All rights reserved.
 //
 
-#import "SEBaseViewController.h"
+#import "KSBaseViewController.h"
 #import "UIViewController+MMDrawerController.h"
 #import "MMDrawerBarButtonItem.h"
 
-@interface SEBaseViewController ()
+@interface KSBaseViewController ()
 
 @property (nonatomic, assign) CGRect scrollRect;
 
 @end
 
-@implementation SEBaseViewController
+@implementation KSBaseViewController
 
 #pragma mark -
 #pragma mark View LifeCycle
@@ -90,7 +90,7 @@
 
 -(void)pushNewController:(UIViewController *)viewController animated:(BOOL)animated
 {
-    __weak SEBaseViewController *__self = self;
+    __weak KSBaseViewController *__self = self;
 	dispatch_async(dispatch_get_main_queue(), ^{
 		[__self.navigationController pushViewController:viewController animated:animated];
 	});
@@ -98,7 +98,7 @@
 
 -(void)popViewController
 {
-    __weak SEBaseViewController *__self = self;
+    __weak KSBaseViewController *__self = self;
     dispatch_async(dispatch_get_main_queue(), ^{
         if ([__self isModal] && [[__self.navigationController viewControllers] count] == 1) {
             [__self.navigationController dismissViewControllerAnimated:YES completion:nil];
