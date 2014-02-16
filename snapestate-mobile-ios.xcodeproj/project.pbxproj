@@ -83,6 +83,8 @@
 		BC5838F5188CC7E400301C53 /* loginbg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC5838F3188CC7E400301C53 /* loginbg@2x.png */; };
 		BC5838F6188CC7E400301C53 /* loginbgraw.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BC5838F4188CC7E400301C53 /* loginbgraw.jpg */; };
 		BC616EE318A706C5001FEA86 /* sidebg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC616EE218A706C5001FEA86 /* sidebg@2x.png */; };
+		BC6DF8E518B13D6500070A26 /* icon_location@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC6DF8E418B13D6500070A26 /* icon_location@2x.png */; };
+		BC6DF8EA18B1425500070A26 /* icon_details@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC6DF8E918B1425500070A26 /* icon_details@2x.png */; };
 		BCED8EFC18A6AD23003AC386 /* SEBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BCED8EED18A6AD23003AC386 /* SEBaseCell.m */; };
 		BCED8EFD18A6AD23003AC386 /* SEButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BCED8EEF18A6AD23003AC386 /* SEButton.m */; };
 		BCED8EFE18A6AD23003AC386 /* SETextField.m in Sources */ = {isa = PBXBuildFile; fileRef = BCED8EF118A6AD23003AC386 /* SETextField.m */; };
@@ -273,6 +275,8 @@
 		BC5838F3188CC7E400301C53 /* loginbg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "loginbg@2x.png"; sourceTree = "<group>"; };
 		BC5838F4188CC7E400301C53 /* loginbgraw.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = loginbgraw.jpg; sourceTree = "<group>"; };
 		BC616EE218A706C5001FEA86 /* sidebg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sidebg@2x.png"; sourceTree = "<group>"; };
+		BC6DF8E418B13D6500070A26 /* icon_location@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_location@2x.png"; sourceTree = "<group>"; };
+		BC6DF8E918B1425500070A26 /* icon_details@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_details@2x.png"; sourceTree = "<group>"; };
 		BCED8EEC18A6AD23003AC386 /* SEBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEBaseCell.h; sourceTree = "<group>"; };
 		BCED8EED18A6AD23003AC386 /* SEBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEBaseCell.m; sourceTree = "<group>"; };
 		BCED8EEE18A6AD23003AC386 /* SEButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEButton.h; sourceTree = "<group>"; };
@@ -788,6 +792,8 @@
 		BCED8F2418A6C066003AC386 /* icons */ = {
 			isa = PBXGroup;
 			children = (
+				BC6DF8E918B1425500070A26 /* icon_details@2x.png */,
+				BC6DF8E418B13D6500070A26 /* icon_location@2x.png */,
 				BCED8F2918A6C2BD003AC386 /* icon_heart@2x.png */,
 				BCED8F2518A6C066003AC386 /* icon_backdrk.png */,
 				BCED8F2618A6C066003AC386 /* icon_backdrk@2x.png */,
@@ -961,8 +967,10 @@
 				BCED8F2018A6B566003AC386 /* OFL.txt in Resources */,
 				BC04D28318B02F950052FB92 /* SourceSansPro-ExtraLightItalic.ttf in Resources */,
 				BCED8F1718A6B566003AC386 /* Lato-BlackItalic.ttf in Resources */,
+				BC6DF8E518B13D6500070A26 /* icon_location@2x.png in Resources */,
 				BC04D28818B02F950052FB92 /* SourceSansPro-Semibold.ttf in Resources */,
 				BC616EE318A706C5001FEA86 /* sidebg@2x.png in Resources */,
+				BC6DF8EA18B1425500070A26 /* icon_details@2x.png in Resources */,
 				BC04D28918B02F950052FB92 /* SourceSansPro-SemiboldItalic.ttf in Resources */,
 				BC11A5C6188B6F120002D8D3 /* Images.xcassets in Resources */,
 				BC5838F6188CC7E400301C53 /* loginbgraw.jpg in Resources */,
