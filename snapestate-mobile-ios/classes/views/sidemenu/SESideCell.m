@@ -37,6 +37,10 @@
 - (void)setCurrent:(BOOL)current
 {
 	[self.menuLabel setFontSize:current ? 25.0f : 18.0f];
+	CGRect frame = self.menuLabel.frame;
+	frame.origin.x = current ? BADGE_WIDTH - 5: BADGE_WIDTH;
+	self.menuLabel.frame = frame;
+	
 	[self.cellBackground setBaseBackgroundColor:current ? SE_COLOR_GRAY_BLUE : [UIColor clearColor]];
 	[self.cellBackground setBackgroundColor:current ? SE_COLOR_GRAY_BLUE : [UIColor clearColor]];
 }

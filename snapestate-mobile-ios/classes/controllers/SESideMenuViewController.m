@@ -128,6 +128,7 @@ enum SE_SIDE_ROWS {
 																   __blockself.view.bounds.size.height - yloc)];
 		_tableView.backgroundColor = [UIColor clearColor];
 		_tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+		_tableView.scrollEnabled = NO;
 		_tableView.dataSource = __blockself;
 		_tableView.delegate = __blockself;
 	});
