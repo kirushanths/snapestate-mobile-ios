@@ -56,6 +56,23 @@
 		cell = [[SEDiscoverCell alloc] init];
 	}
 	
+	switch (indexPath.row % 4) {
+		case 0:
+			[cell setupWithImage:[UIImage imageNamed:@"discoverbg.jpeg"]];
+			break;
+		case 1:
+			[cell setupWithImage:[UIImage imageNamed:@"home3.jpg"]];
+			break;
+		case 2:
+			[cell setupWithImage:[UIImage imageNamed:@"home2.jpg"]];
+			break;
+		case 3:
+			[cell setupWithImage:[UIImage imageNamed:@"home4.jpg"]];
+			break;
+		default:
+			break;
+	}
+	
 	return cell;
 }
 
@@ -72,6 +89,7 @@
 {
 	CREATE_THREAD_SAFE_INSTANCE(_tableView, ^{
 		_tableView = [[UITableView alloc] initWithFrame:__blockself.view.bounds];
+		_tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
 		_tableView.delegate = __blockself;
 		_tableView.dataSource = __blockself;
 	});

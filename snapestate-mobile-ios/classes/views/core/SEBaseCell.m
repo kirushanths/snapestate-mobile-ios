@@ -16,7 +16,7 @@
     self = [super initWithStyle:UITableViewCellStyleDefault reuseIdentifier:[[self class] reuseIdentifier]];
     if (self) {
         [self initialize];
-        [self designCell];
+		[self designCell];
     }
     return self;
 }
@@ -33,12 +33,8 @@
     self.contentView.clipsToBounds = YES;
 }
 
--(void)designCell {}
-
-- (void)layoutSubviews
+-(void)designCell
 {
-	[super layoutSubviews];
-	
 	UIView *bgColorView = [[UIView alloc] init];
 	[self setSelectedBackgroundView:bgColorView];
 	

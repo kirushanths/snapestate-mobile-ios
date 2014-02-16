@@ -10,4 +10,6 @@
 
 @interface SEDiscoverCell : SEBaseCell
 
+- (void)setupWithImage:(UIImage *)image;
+
 @end

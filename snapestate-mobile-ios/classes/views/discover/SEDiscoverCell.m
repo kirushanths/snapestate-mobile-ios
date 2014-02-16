@@ -28,15 +28,26 @@
 
 @implementation SEDiscoverCell
 
+- (void)designCell
+{
+	[super designCell];
+	self.cellDivider.hidden = YES;
+	[self.cellBackground addSubview:self.discoverImage];
+}
+
 - (void)layoutSubviews
 {
 	[super layoutSubviews];
-	[self.cellBackground addSubview:self.discoverImage];
 	[self.cellBackground addSubview:self.shadowFade];
 	[self.cellBackground addSubview:self.heartIcon];
 	[self.cellBackground addSubview:self.cityLabel];
 	[self.cellBackground addSubview:self.infoLabel];
 	[self.cellBackground addSubview:self.priceLabel];
+}
+
+- (void)setupWithImage:(UIImage *)image
+{
+	self.discoverImage.image = image;
 }
 
 #pragma mark -
@@ -45,7 +56,7 @@
 - (UIImageView *)discoverImage
 {
 	CREATE_THREAD_SAFE_INSTANCE(_discoverImage, ^{
-		_discoverImage = [[UIImageView alloc] initWithFrame:__blockself.bounds];
+		_discoverImage = [[UIImageView alloc] initWithFrame:__blockself.cellBackground.bounds];
 		_discoverImage.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
 		_discoverImage.contentMode = UIViewContentModeCenter;
 		_discoverImage.image = [UIImage imageNamed:@"discoverbg.jpeg"];
@@ -61,7 +72,7 @@
 		_heartIcon.contentMode = UIViewContentModeCenter;
 		_heartIcon.autoresizingMask = UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleLeftMargin;
 		_heartIcon.image = [UIImage imageNamed:@"icon_heart.png"];
-		[_heartIcon setBackgroundColor:[UIColor colorWithWhite:0.0f alpha:0.5f]];
+		[_heartIcon setBackgroundColor:[UIColor clearColor]];
 	});
 }
 
@@ -101,6 +112,7 @@
 		_priceLabel.text = @"$380,000";
 		_priceLabel.textAlignment = NSTextAlignmentRight;
 		[_priceLabel setTextColor:[UIColor whiteColor]];
+		[_priceLabel setBackgroundColor:[UIColor clearColor]];
 	});
 }
 
@@ -113,7 +125,7 @@
 		[_infoLabel setFontSize:15.0f];
 		_infoLabel.text = @"2300 sq";
 		[_infoLabel setTextColor:[UIColor whiteColor]];
-//		[_infoLabel setBackgroundColor:[UIColor colorWithWhite:0.0f alpha:0.5f]];
+		[_infoLabel setBackgroundColor:[UIColor clearColor]];
 	});
 }
 
@@ -126,7 +138,7 @@
 		[_cityLabel setFontSize:15.0f];
 		_cityLabel.text = @"Toronto, ON";
 		[_cityLabel setTextColor:[UIColor whiteColor]];
-//		[_cityLabel setBackgroundColor:[UIColor colorWithWhite:0.0f alpha:0.5f]];
+		[_cityLabel setBackgroundColor:[UIColor clearColor]];
 	});
 }
 
