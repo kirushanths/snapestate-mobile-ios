@@ -127,6 +127,7 @@
 #define NetworkActivityIndicatorVisible(x)  [UIApplication sharedApplication].networkActivityIndicatorVisible = x
 #define NavBar                              self.navigationController.navigationBar
 #define TabBar                              self.tabBarController.tabBar
+#define StatusBarHeight						[[UIApplication sharedApplication] statusBarFrame].size.height
 #define NavBarHeight                        self.navigationController.navigationBar.bounds.size.height
 #define TabBarHeight                        self.tabBarController.tabBar.bounds.size.height
 #define ScreenWidth                         [[UIScreen mainScreen] bounds].size.width

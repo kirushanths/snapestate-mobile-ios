@@ -25,6 +25,7 @@
 		BC04D29318B07FAF0052FB92 /* home3@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BC04D28F18B07FAF0052FB92 /* home3@2x.jpg */; };
 		BC04D29418B07FAF0052FB92 /* home4@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BC04D29018B07FAF0052FB92 /* home4@2x.jpg */; };
 		BC04D29718B085FB0052FB92 /* SEBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC04D29618B085FB0052FB92 /* SEBaseViewController.m */; };
+		BC04D29A18B088B80052FB92 /* SEPropertyListingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC04D29918B088B80052FB92 /* SEPropertyListingViewController.m */; };
 		BC11A5B4188B6F120002D8D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC11A5B3188B6F120002D8D3 /* Foundation.framework */; };
 		BC11A5B6188B6F120002D8D3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC11A5B5188B6F120002D8D3 /* CoreGraphics.framework */; };
 		BC11A5B8188B6F120002D8D3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC11A5B7188B6F120002D8D3 /* UIKit.framework */; };
@@ -179,6 +180,8 @@
 		BC04D29018B07FAF0052FB92 /* home4@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "home4@2x.jpg"; sourceTree = "<group>"; };
 		BC04D29518B085FB0052FB92 /* SEBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEBaseViewController.h; sourceTree = "<group>"; };
 		BC04D29618B085FB0052FB92 /* SEBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEBaseViewController.m; sourceTree = "<group>"; };
+		BC04D29818B088B80052FB92 /* SEPropertyListingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEPropertyListingViewController.h; sourceTree = "<group>"; };
+		BC04D29918B088B80052FB92 /* SEPropertyListingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEPropertyListingViewController.m; sourceTree = "<group>"; };
 		BC11A5B0188B6F120002D8D3 /* snapestate-mobile-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "snapestate-mobile-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC11A5B3188B6F120002D8D3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BC11A5B5188B6F120002D8D3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -624,6 +627,8 @@
 				BC5412A2189DED8900BC0D68 /* SEDiscoverViewController.m */,
 				BCED8F3918A6F1C6003AC386 /* SESideMenuViewController.h */,
 				BCED8F3A18A6F1C6003AC386 /* SESideMenuViewController.m */,
+				BC04D29818B088B80052FB92 /* SEPropertyListingViewController.h */,
+				BC04D29918B088B80052FB92 /* SEPropertyListingViewController.m */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -985,6 +990,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC04D29A18B088B80052FB92 /* SEPropertyListingViewController.m in Sources */,
 				BC583875188B881300301C53 /* SDURLCache.m in Sources */,
 				BC583881188B881300301C53 /* UIImage+Additions.m in Sources */,
 				BC583880188B881300301C53 /* NSString+HTML.m in Sources */,

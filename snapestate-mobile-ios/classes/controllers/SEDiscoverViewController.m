@@ -8,6 +8,7 @@
 
 #import "SEDiscoverViewController.h"
 #import "SEDiscoverCell.h"
+#import "SEPropertyListingViewController.h"
 
 @interface SEDiscoverViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -81,6 +82,12 @@
 
 -(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section { return 0.0f; }
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section { return 0.0f; }
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+	SEPropertyListingViewController *nextVC = [[SEPropertyListingViewController alloc] init];
+	[self pushNewController:nextVC];
+}
 
 #pragma mark -
 #pragma mark Property Accessors

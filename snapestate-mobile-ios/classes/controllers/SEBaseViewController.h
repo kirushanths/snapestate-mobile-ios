@@ -10,6 +10,8 @@
 
 @interface SEBaseViewController : KSBaseViewController
 
+- (float)navStatusBarHeight;
+
 #pragma mark -
 #pragma mark Side Menu
 

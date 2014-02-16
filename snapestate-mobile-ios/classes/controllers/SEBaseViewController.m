@@ -20,7 +20,22 @@
 - (void)viewDidLoad
 {
 	[super viewDidLoad];
+	self.view.backgroundColor = SE_COLOR_GRAY_BLUE_DARK;
 	[self enableSidebar:YES];
+	
+	self.navigationItem.hidesBackButton = YES;
+    self.navigationItem.backBarButtonItem = nil;
+    
+    UIButton *image = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 24, 20)];
+    [image setBackgroundImage:[UIImage imageNamed:@"icon_backdrk.png"] forState:UIControlStateNormal];
+    [image addTarget:self action:@selector(popViewController) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithCustomView:image];
+    self.navigationItem.leftBarButtonItem = backButton;
+}
+
+- (float)navStatusBarHeight
+{
+	return StatusBarHeight + NavBarHeight;
 }
 
 #pragma mark -
