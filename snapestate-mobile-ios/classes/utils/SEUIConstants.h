@@ -48,9 +48,5 @@
 #define SE_COLOR_FUSHIA [UIColor colorWithRed:0.23f green:0.78f blue:0.72f alpha:1.0f] // #3ac7b7
 #define SE_COLOR_PINK [UIColor colorWithRed:1.00f green:0.20f blue:0.37f alpha:1.0f] // #fe325f
 
-/* FONTS */
-
-#define SE_FONT_LIGHT(a) [UIFont fontWithName:@"Lato-Light" size:(a)]
-#define SE_FONT(a) [UIFont fontWithName:@"Lato-Regular" size:(a)]
 
 #endif

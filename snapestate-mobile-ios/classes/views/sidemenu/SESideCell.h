@@ -10,6 +10,10 @@
 
 @interface SESideCell : SEBaseCell
 
+@property (nonatomic, assign) int badgeValue;
+
 - (void)setTitle:(NSString *)title;
+- (void)setCurrent:(BOOL)current;
+- (void)showBadge:(BOOL)show;
 
 @end

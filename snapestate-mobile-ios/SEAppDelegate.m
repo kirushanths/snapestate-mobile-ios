@@ -26,10 +26,10 @@
 																   leftDrawerViewController:sideVC
 																  rightDrawerViewController:nil];
 	[drawerVC setRestorationIdentifier:@"MMDrawer"];
-	[drawerVC setMaximumLeftDrawerWidth:200.0f];
+	[drawerVC setMaximumLeftDrawerWidth:250.0f];
     [drawerVC setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeBezelPanningCenterView];
     [drawerVC setCloseDrawerGestureModeMask:MMCloseDrawerGestureModeAll];
-	[drawerVC setDrawerVisualStateBlock:[MMDrawerVisualState parallaxVisualStateBlockWithParallaxFactor:5]];
+	[drawerVC setDrawerVisualStateBlock:[MMDrawerVisualState slideAndScaleVisualStateBlock]];
 	
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 	self.window.rootViewController = drawerVC;
@@ -53,7 +53,7 @@
 	NSDictionary *attrs = @{ UITextAttributeTextColor: textColor,
 							 UITextAttributeTextShadowColor: [UIColor clearColor],
 							 UITextAttributeTextShadowOffset: [NSValue valueWithUIOffset:UIOffsetMake(0.0f, 0.0f)],
-							 UITextAttributeFont: [UIFont fontWithName:@"Lato-Regular" size:18.0f] };
+							 UITextAttributeFont: SE_FONT(18.0f) };
 	
 	[[UINavigationBar appearance] setTitleTextAttributes:attrs];
 	[[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];

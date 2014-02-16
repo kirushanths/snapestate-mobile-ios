@@ -35,6 +35,15 @@ enum SE_SIDE_ROWS {
 	self.view.backgroundColor = self.tableView.backgroundColor = [UIColor clearColor];
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+	[super viewWillAppear:animated];
+	[self.tableView reloadData];
+	CGRect frame = self.tableView.frame;
+	frame.origin.y = (self.view.bounds.size.height - self.tableView.contentSize.height) / 2;
+	self.tableView.frame = frame;
+}
+
 #pragma mark -
 #pragma mark TableView Delegate
 
@@ -55,12 +64,18 @@ enum SE_SIDE_ROWS {
 		cell = [[SESideCell alloc] init];
 	}
 	
+	[cell setCurrent:NO];
+	[cell showBadge:NO];
+	
 	switch (indexPath.row) {
 		case SE_SIDE_ROW_SNAPS:
 			[cell setTitle:@"My Snaps"];
+			[cell setBadgeValue:1];
+			[cell showBadge:YES];
 			break;
 		case SE_SIDE_ROW_DISCOVER:
 			[cell setTitle:@"Discover"];
+			[cell setCurrent:YES];
 			break;
 		case SE_SIDE_ROW_SEARCH:
 			[cell setTitle:@"Search"];
@@ -97,6 +112,8 @@ enum SE_SIDE_ROWS {
 {
 	CREATE_THREAD_SAFE_INSTANCE(_backgroundImage, ^{
 		_backgroundImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"sidebg.png"]];
+		_backgroundImage.frame = __blockself.view.bounds;
+		_backgroundImage.backgroundColor = SE_COLOR_GRAY_BLUE_DARK;
 		_backgroundImage.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
 		_backgroundImage.contentMode = UIViewContentModeCenter;
 	});
@@ -105,7 +122,7 @@ enum SE_SIDE_ROWS {
 - (UITableView *)tableView
 {
 	CREATE_THREAD_SAFE_INSTANCE(_tableView, ^{
-		float yloc = (SYSTEM_VERSION_MIN_SDK_7 ? 20 : 0) + 10;
+		float yloc = (SYSTEM_VERSION_MIN_SDK_7 ? 20 : 0);
 		_tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, yloc,
 																   __blockself.view.bounds.size.width,
 																   __blockself.view.bounds.size.height - yloc)];

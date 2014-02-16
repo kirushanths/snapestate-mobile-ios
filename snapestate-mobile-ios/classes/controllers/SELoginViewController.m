@@ -32,13 +32,23 @@
 {
     [super viewDidLoad];
 	
-//	[self.navigationController setNavigationBarHidden:YES];
-	
 	self.title = @"Login";
 	[self.view addSubview:self.dropBackgroundView];
 	[self.view addSubview:self.loginField];
 	[self.view addSubview:self.passwordField];
 	[self.view addSubview:self.loginButton];
+}
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:YES];
+}
+
+-(void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    [self.navigationController setNavigationBarHidden:NO];
 }
 
 - (void)loginButtonPressed

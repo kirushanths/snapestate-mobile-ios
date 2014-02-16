@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC04D27D18B02F950052FB92 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = BC04D27018B02F950052FB92 /* OFL.txt */; };
+		BC04D27E18B02F950052FB92 /* SourceSansPro-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC04D27118B02F950052FB92 /* SourceSansPro-Black.ttf */; };
+		BC04D27F18B02F950052FB92 /* SourceSansPro-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC04D27218B02F950052FB92 /* SourceSansPro-BlackItalic.ttf */; };
+		BC04D28018B02F950052FB92 /* SourceSansPro-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC04D27318B02F950052FB92 /* SourceSansPro-Bold.ttf */; };
+		BC04D28118B02F950052FB92 /* SourceSansPro-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC04D27418B02F950052FB92 /* SourceSansPro-BoldItalic.ttf */; };
+		BC04D28218B02F950052FB92 /* SourceSansPro-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC04D27518B02F950052FB92 /* SourceSansPro-ExtraLight.ttf */; };
+		BC04D28318B02F950052FB92 /* SourceSansPro-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC04D27618B02F950052FB92 /* SourceSansPro-ExtraLightItalic.ttf */; };
+		BC04D28418B02F950052FB92 /* SourceSansPro-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC04D27718B02F950052FB92 /* SourceSansPro-Italic.ttf */; };
+		BC04D28518B02F950052FB92 /* SourceSansPro-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC04D27818B02F950052FB92 /* SourceSansPro-Light.ttf */; };
+		BC04D28618B02F950052FB92 /* SourceSansPro-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC04D27918B02F950052FB92 /* SourceSansPro-LightItalic.ttf */; };
+		BC04D28718B02F950052FB92 /* SourceSansPro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC04D27A18B02F950052FB92 /* SourceSansPro-Regular.ttf */; };
+		BC04D28818B02F950052FB92 /* SourceSansPro-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC04D27B18B02F950052FB92 /* SourceSansPro-Semibold.ttf */; };
+		BC04D28918B02F950052FB92 /* SourceSansPro-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC04D27C18B02F950052FB92 /* SourceSansPro-SemiboldItalic.ttf */; };
 		BC11A5B4188B6F120002D8D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC11A5B3188B6F120002D8D3 /* Foundation.framework */; };
 		BC11A5B6188B6F120002D8D3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC11A5B5188B6F120002D8D3 /* CoreGraphics.framework */; };
 		BC11A5B8188B6F120002D8D3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC11A5B7188B6F120002D8D3 /* UIKit.framework */; };
@@ -143,6 +156,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BC04D27018B02F950052FB92 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		BC04D27118B02F950052FB92 /* SourceSansPro-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Black.ttf"; sourceTree = "<group>"; };
+		BC04D27218B02F950052FB92 /* SourceSansPro-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-BlackItalic.ttf"; sourceTree = "<group>"; };
+		BC04D27318B02F950052FB92 /* SourceSansPro-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Bold.ttf"; sourceTree = "<group>"; };
+		BC04D27418B02F950052FB92 /* SourceSansPro-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-BoldItalic.ttf"; sourceTree = "<group>"; };
+		BC04D27518B02F950052FB92 /* SourceSansPro-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-ExtraLight.ttf"; sourceTree = "<group>"; };
+		BC04D27618B02F950052FB92 /* SourceSansPro-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		BC04D27718B02F950052FB92 /* SourceSansPro-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Italic.ttf"; sourceTree = "<group>"; };
+		BC04D27818B02F950052FB92 /* SourceSansPro-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Light.ttf"; sourceTree = "<group>"; };
+		BC04D27918B02F950052FB92 /* SourceSansPro-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-LightItalic.ttf"; sourceTree = "<group>"; };
+		BC04D27A18B02F950052FB92 /* SourceSansPro-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Regular.ttf"; sourceTree = "<group>"; };
+		BC04D27B18B02F950052FB92 /* SourceSansPro-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Semibold.ttf"; sourceTree = "<group>"; };
+		BC04D27C18B02F950052FB92 /* SourceSansPro-SemiboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-SemiboldItalic.ttf"; sourceTree = "<group>"; };
 		BC11A5B0188B6F120002D8D3 /* snapestate-mobile-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "snapestate-mobile-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC11A5B3188B6F120002D8D3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BC11A5B5188B6F120002D8D3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -326,6 +352,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BC04D26F18B02F950052FB92 /* Source_Sans_Pro */ = {
+			isa = PBXGroup;
+			children = (
+				BC04D27018B02F950052FB92 /* OFL.txt */,
+				BC04D27118B02F950052FB92 /* SourceSansPro-Black.ttf */,
+				BC04D27218B02F950052FB92 /* SourceSansPro-BlackItalic.ttf */,
+				BC04D27318B02F950052FB92 /* SourceSansPro-Bold.ttf */,
+				BC04D27418B02F950052FB92 /* SourceSansPro-BoldItalic.ttf */,
+				BC04D27518B02F950052FB92 /* SourceSansPro-ExtraLight.ttf */,
+				BC04D27618B02F950052FB92 /* SourceSansPro-ExtraLightItalic.ttf */,
+				BC04D27718B02F950052FB92 /* SourceSansPro-Italic.ttf */,
+				BC04D27818B02F950052FB92 /* SourceSansPro-Light.ttf */,
+				BC04D27918B02F950052FB92 /* SourceSansPro-LightItalic.ttf */,
+				BC04D27A18B02F950052FB92 /* SourceSansPro-Regular.ttf */,
+				BC04D27B18B02F950052FB92 /* SourceSansPro-Semibold.ttf */,
+				BC04D27C18B02F950052FB92 /* SourceSansPro-SemiboldItalic.ttf */,
+			);
+			path = Source_Sans_Pro;
+			sourceTree = "<group>";
+		};
 		BC11A5A7188B6F120002D8D3 = {
 			isa = PBXGroup;
 			children = (
@@ -688,6 +734,7 @@
 		BCED8F0918A6B566003AC386 /* fonts */ = {
 			isa = PBXGroup;
 			children = (
+				BC04D26F18B02F950052FB92 /* Source_Sans_Pro */,
 				BCED8F0A18A6B566003AC386 /* Lato */,
 			);
 			path = fonts;
@@ -861,25 +908,38 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCED8F1D18A6B566003AC386 /* Lato-Light.ttf in Resources */,
+				BC04D28118B02F950052FB92 /* SourceSansPro-BoldItalic.ttf in Resources */,
 				BC583873188B881300301C53 /* .gitignore in Resources */,
 				BCED8F1818A6B566003AC386 /* Lato-Bold.ttf in Resources */,
+				BC04D28418B02F950052FB92 /* SourceSansPro-Italic.ttf in Resources */,
 				BCED8F1A18A6B566003AC386 /* Lato-Hairline.ttf in Resources */,
+				BC04D27E18B02F950052FB92 /* SourceSansPro-Black.ttf in Resources */,
 				BC11A5BE188B6F120002D8D3 /* InfoPlist.strings in Resources */,
 				BC5838F5188CC7E400301C53 /* loginbg@2x.png in Resources */,
+				BC04D28218B02F950052FB92 /* SourceSansPro-ExtraLight.ttf in Resources */,
 				BCED8F1918A6B566003AC386 /* Lato-BoldItalic.ttf in Resources */,
+				BC04D28618B02F950052FB92 /* SourceSansPro-LightItalic.ttf in Resources */,
 				BC583871188B881300301C53 /* PhoneFormats.dat in Resources */,
 				BCED8F1B18A6B566003AC386 /* Lato-HairlineItalic.ttf in Resources */,
 				BCED8F1C18A6B566003AC386 /* Lato-Italic.ttf in Resources */,
 				BCED8F1618A6B566003AC386 /* Lato-Black.ttf in Resources */,
+				BC04D28518B02F950052FB92 /* SourceSansPro-Light.ttf in Resources */,
+				BC04D28718B02F950052FB92 /* SourceSansPro-Regular.ttf in Resources */,
 				BCED8F1E18A6B566003AC386 /* Lato-LightItalic.ttf in Resources */,
+				BC04D27D18B02F950052FB92 /* OFL.txt in Resources */,
 				BCED8F2018A6B566003AC386 /* OFL.txt in Resources */,
+				BC04D28318B02F950052FB92 /* SourceSansPro-ExtraLightItalic.ttf in Resources */,
 				BCED8F1718A6B566003AC386 /* Lato-BlackItalic.ttf in Resources */,
+				BC04D28818B02F950052FB92 /* SourceSansPro-Semibold.ttf in Resources */,
 				BC616EE318A706C5001FEA86 /* sidebg@2x.png in Resources */,
 				BCED8F0818A6B1FB003AC386 /* discoverbg@2x.jpeg in Resources */,
+				BC04D28918B02F950052FB92 /* SourceSansPro-SemiboldItalic.ttf in Resources */,
 				BC11A5C6188B6F120002D8D3 /* Images.xcassets in Resources */,
 				BC5838F6188CC7E400301C53 /* loginbgraw.jpg in Resources */,
 				BCED8F2718A6C066003AC386 /* icon_backdrk.png in Resources */,
+				BC04D28018B02F950052FB92 /* SourceSansPro-Bold.ttf in Resources */,
 				BCED8F2818A6C066003AC386 /* icon_backdrk@2x.png in Resources */,
+				BC04D27F18B02F950052FB92 /* SourceSansPro-BlackItalic.ttf in Resources */,
 				BCED8F1F18A6B566003AC386 /* Lato-Regular.ttf in Resources */,
 				BCED8F2A18A6C2BD003AC386 /* icon_heart@2x.png in Resources */,
 			);
