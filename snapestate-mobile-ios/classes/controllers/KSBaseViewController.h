@@ -23,13 +23,6 @@
 - (void)popViewController;
 
 #pragma mark -
-#pragma mark Side Menu
-
-- (void)setupDrawerButton;
-- (void)openDrawer;
-- (void)closeDrawerWithCompletion:(void (^)(BOOL finished))completion;
-
-#pragma mark -
 #pragma mark Keyboard Events
 
 - (void)registerKeyboardEvents;

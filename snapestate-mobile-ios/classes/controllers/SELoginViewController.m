@@ -32,6 +32,8 @@
 {
     [super viewDidLoad];
 	
+	[self enableSidebar:NO];
+	
 	self.title = @"Login";
 	[self.view addSubview:self.dropBackgroundView];
 	[self.view addSubview:self.loginField];

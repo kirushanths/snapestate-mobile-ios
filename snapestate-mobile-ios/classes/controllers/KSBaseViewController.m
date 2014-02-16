@@ -7,8 +7,6 @@
 //
 
 #import "KSBaseViewController.h"
-#import "UIViewController+MMDrawerController.h"
-#import "MMDrawerBarButtonItem.h"
 
 @interface KSBaseViewController ()
 
@@ -36,47 +34,10 @@
         [self.view setTranslatesAutoresizingMaskIntoConstraints:NO];
 }
 
-- (void)viewDidLoad
-{
-	[super viewDidLoad];
-//	self.navigationItem.hidesBackButton = YES;
-//    self.navigationItem.backBarButtonItem = nil;
-    
-//    UIButton *image = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 24, 20)];
-//    [image setBackgroundImage:[UIImage imageNamed:@"icon_backdrk.png"] forState:UIControlStateNormal];
-//    [image addTarget:self action:@selector(popViewController) forControlEvents:UIControlEventTouchUpInside];
-//    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithCustomView:image];
-//    self.navigationItem.leftBarButtonItem = backButton;
-}
-
 -(void)viewDidUnload
 {
 	[super viewDidUnload];
 	[[NSNotificationCenter defaultCenter] removeObserver:self];
-}
-
-#pragma mark -
-#pragma mark Side Menu
-
-- (void)setupDrawerButton
-{
-	MMDrawerBarButtonItem *drawerButton = [[MMDrawerBarButtonItem alloc] initWithTarget:self action:@selector(drawerButtonPressed:)];
-	self.navigationItem.leftBarButtonItem = drawerButton;
-}
-
-- (void)drawerButtonPressed:(id)sender
-{
-    [self openDrawer];
-}
-
-- (void)openDrawer
-{
-	[self.mm_drawerController openDrawerSide:MMDrawerSideLeft animated:YES completion:nil];
-}
-
-- (void)closeDrawerWithCompletion:(void (^)(BOOL finished))completion
-{
-	[self.mm_drawerController closeDrawerAnimated:YES completion:completion];
 }
 
 #pragma mark -

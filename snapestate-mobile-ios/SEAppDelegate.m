@@ -20,11 +20,11 @@
 {	
 	SELoginViewController *loginVC = [[SELoginViewController alloc] init];
 	SENavigationViewController *navVC = [[SENavigationViewController alloc] initWithRootViewController:loginVC];
-	SESideMenuViewController *sideVC = [[SESideMenuViewController alloc] init];
 	
 	MMDrawerController *drawerVC = [[MMDrawerController alloc] initWithCenterViewController:navVC
-																   leftDrawerViewController:sideVC
+																   leftDrawerViewController:nil
 																  rightDrawerViewController:nil];
+	
 	[drawerVC setRestorationIdentifier:@"MMDrawer"];
 	[drawerVC setMaximumLeftDrawerWidth:250.0f];
     [drawerVC setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeBezelPanningCenterView];
