@@ -8,10 +8,14 @@
 
 #import "SEPropertyListingViewController.h"
 #import "SEHouseListingTableView.h"
+#import "UILabel+LatoFont.h"
+
+#define BUTTON_HEIGHT 50
 
 @interface SEPropertyListingViewController ()
 
 @property (nonatomic, strong) SEHouseListingTableView *tableView;
+@property (nonatomic, strong) UIButton *contactButton;
 
 @end
 
@@ -27,6 +31,7 @@
 	self.navigationItem.rightBarButtonItem = searchIcon;
 
 	[self.view addSubview:self.tableView];
+	[self.view addSubview:self.contactButton];
 }
 
 #pragma mark -
@@ -36,6 +41,20 @@
 {
 	CREATE_THREAD_SAFE_INSTANCE(_tableView, ^{
 		_tableView = [[SEHouseListingTableView alloc] initWithFrame:CGRectMake(0, 0, ViewWidth(__blockself.view), ViewHeight(__blockself.view))];
+		[_tableView setContentInset:UIEdgeInsetsMake(0, 0, BUTTON_HEIGHT, 0)];
+	});
+}
+
+- (UIButton *)contactButton
+{
+	CREATE_THREAD_SAFE_INSTANCE(_contactButton, ^{
+		float height = BUTTON_HEIGHT;
+		_contactButton = [[UIButton alloc] initWithFrame:CGRectMake(0, ViewHeight(__blockself.view) - height,
+																	ViewWidth(__blockself.view), BUTTON_HEIGHT)];
+		_contactButton.autoresizingMask = UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleWidth;
+		_contactButton.backgroundColor = [SE_COLOR_BLUE colorWithAlphaComponent:0.7];
+		[_contactButton setTitle:@"CONTACT AGENT" forState:UIControlStateNormal];
+		[_contactButton.titleLabel setFontRegularSize:18.0f];
 	});
 }
 

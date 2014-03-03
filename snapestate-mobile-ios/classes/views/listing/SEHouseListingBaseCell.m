@@ -26,7 +26,6 @@
 		_cellIcon.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleBottomMargin;
 		_cellIcon.backgroundColor = [UIColor clearColor];
 		_cellIcon.contentMode = UIViewContentModeCenter;
-		_cellIcon.alpha = 0.2;
 		_cellIcon.image = [UIImage imageNamed:@"icon_location.png"];
 	});
 }

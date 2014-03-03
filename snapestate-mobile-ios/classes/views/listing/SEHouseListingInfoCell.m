@@ -13,6 +13,8 @@
 - (void)layoutSubviews
 {
 	[super layoutSubviews];
+	
+	self.cellIcon.image = [UIImage imageNamed:@"icon_details.png"];
 	[self.cellBackground addSubview:self.cellIcon];
 }
 

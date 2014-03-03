@@ -20,6 +20,8 @@
 - (void)layoutSubviews
 {
 	[super layoutSubviews];
+	self.cellIcon.image = [UIImage imageNamed:@"icon_location.png"];
+	self.cellIcon.alpha = 0.2f;
 	[self.cellBackground addSubview:self.cellIcon];
 	[self.cellBackground addSubview:self.streeLabel];
 	[self.cellBackground addSubview:self.locationLabel];

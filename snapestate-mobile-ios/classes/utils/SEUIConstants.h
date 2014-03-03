@@ -21,6 +21,8 @@
 
 /* COLORS */
 
+#define SE_COLOR_THEME RGB(51, 106, 163)
+
 #define SE_COLOR_BLUE [UIColor colorWithRed:0.04f green:0.58f blue:0.98f alpha:1.0f]
 #define SE_COLOR_BLUE_LIGHT_TEXT [UIColor colorWithRed:18.0f/255.0f green:100.0f/255.0f blue:187.0f/255.0f alpha:0.6f]
 #define SE_COLOR_BLUE_LIGHT_BG [UIColor colorWithRed:232.0f/255.0f green:246.0f/255.0f blue:1.0f alpha:1.0f]   //#e8f6ff

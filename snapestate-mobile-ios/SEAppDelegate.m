@@ -43,7 +43,7 @@
 
 -(void)styleApplication
 {
-	UIColor *navColor = SE_COLOR_BLUE;
+	UIColor *navColor = SE_COLOR_THEME;
 	UIColor *textColor = [UIColor whiteColor];
 	
 	NSShadow *shadow = [[NSShadow alloc] init];
