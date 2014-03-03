@@ -97,6 +97,8 @@
 		BCC9F93418C400A300DFBCD1 /* SEHouseListingBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC9F93318C400A300DFBCD1 /* SEHouseListingBaseCell.m */; };
 		BCC9F93718C400B500DFBCD1 /* SEHouseListingAddressCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC9F93618C400B500DFBCD1 /* SEHouseListingAddressCell.m */; };
 		BCC9F93A18C400C200DFBCD1 /* SEHouseListingInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC9F93918C400C200DFBCD1 /* SEHouseListingInfoCell.m */; };
+		BCC9F93E18C4C75300DFBCD1 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC9F93D18C4C75300DFBCD1 /* iCarousel.m */; };
+		BCC9F94218C4C7A800DFBCD1 /* FXPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC9F94118C4C7A800DFBCD1 /* FXPageControl.m */; };
 		BCED8EFC18A6AD23003AC386 /* SEBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BCED8EED18A6AD23003AC386 /* SEBaseCell.m */; };
 		BCED8EFD18A6AD23003AC386 /* SEButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BCED8EEF18A6AD23003AC386 /* SEButton.m */; };
 		BCED8EFE18A6AD23003AC386 /* SETextField.m in Sources */ = {isa = PBXBuildFile; fileRef = BCED8EF118A6AD23003AC386 /* SETextField.m */; };
@@ -319,6 +321,10 @@
 		BCC9F93618C400B500DFBCD1 /* SEHouseListingAddressCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEHouseListingAddressCell.m; sourceTree = "<group>"; };
 		BCC9F93818C400C200DFBCD1 /* SEHouseListingInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEHouseListingInfoCell.h; sourceTree = "<group>"; };
 		BCC9F93918C400C200DFBCD1 /* SEHouseListingInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEHouseListingInfoCell.m; sourceTree = "<group>"; };
+		BCC9F93C18C4C75300DFBCD1 /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
+		BCC9F93D18C4C75300DFBCD1 /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
+		BCC9F94018C4C7A800DFBCD1 /* FXPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXPageControl.h; sourceTree = "<group>"; };
+		BCC9F94118C4C7A800DFBCD1 /* FXPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXPageControl.m; sourceTree = "<group>"; };
 		BCED8EEC18A6AD23003AC386 /* SEBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEBaseCell.h; sourceTree = "<group>"; };
 		BCED8EED18A6AD23003AC386 /* SEBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEBaseCell.m; sourceTree = "<group>"; };
 		BCED8EEE18A6AD23003AC386 /* SEButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEButton.h; sourceTree = "<group>"; };
@@ -535,6 +541,8 @@
 		BC58369B188B881200301C53 /* vendor */ = {
 			isa = PBXGroup;
 			children = (
+				BCC9F93F18C4C7A800DFBCD1 /* FXPageControl */,
+				BCC9F93B18C4C75300DFBCD1 /* iCarousel */,
 				BCED8F2B18A6F00A003AC386 /* MMDrawerController */,
 				BC5838E0188B8AE600301C53 /* AppleSampleCode */,
 				BC5838CD188B8A7400301C53 /* RestKit */,
@@ -802,6 +810,24 @@
 				BC71E34F18B2F7C500360B1F /* RestKitFrameworkTests.octest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		BCC9F93B18C4C75300DFBCD1 /* iCarousel */ = {
+			isa = PBXGroup;
+			children = (
+				BCC9F93C18C4C75300DFBCD1 /* iCarousel.h */,
+				BCC9F93D18C4C75300DFBCD1 /* iCarousel.m */,
+			);
+			path = iCarousel;
+			sourceTree = "<group>";
+		};
+		BCC9F93F18C4C7A800DFBCD1 /* FXPageControl */ = {
+			isa = PBXGroup;
+			children = (
+				BCC9F94018C4C7A800DFBCD1 /* FXPageControl.h */,
+				BCC9F94118C4C7A800DFBCD1 /* FXPageControl.m */,
+			);
+			path = FXPageControl;
 			sourceTree = "<group>";
 		};
 		BCED8EEA18A6AD23003AC386 /* discover */ = {
@@ -1076,6 +1102,7 @@
 				BC71E32C18B2F23100360B1F /* SEHouseListingTableView.m in Sources */,
 				BC04D29A18B088B80052FB92 /* SEPropertyListingViewController.m in Sources */,
 				BC583875188B881300301C53 /* SDURLCache.m in Sources */,
+				BCC9F93E18C4C75300DFBCD1 /* iCarousel.m in Sources */,
 				BC583881188B881300301C53 /* UIImage+Additions.m in Sources */,
 				BC71E33818B2F40500360B1F /* SEApiListingFeature.m in Sources */,
 				BC583880188B881300301C53 /* NSString+HTML.m in Sources */,
@@ -1107,6 +1134,7 @@
 				BCED8F0218A6AD23003AC386 /* SECheckbox.m in Sources */,
 				BCED8F0618A6AE34003AC386 /* SEDiscoverCell.m in Sources */,
 				BC04D29718B085FB0052FB92 /* SEBaseViewController.m in Sources */,
+				BCC9F94218C4C7A800DFBCD1 /* FXPageControl.m in Sources */,
 				BC58387C188B881300301C53 /* UIDevice-Orientation.m in Sources */,
 				BCED8F0118A6AD23003AC386 /* SECellBackground.m in Sources */,
 				BC71E32F18B2F2C100360B1F /* SEApiBaseObject.m in Sources */,

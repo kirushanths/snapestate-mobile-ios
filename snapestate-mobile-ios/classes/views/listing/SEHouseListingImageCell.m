@@ -7,37 +7,146 @@
 //
 
 #import "SEHouseListingImageCell.h"
+#import "iCarousel.h"
+#import "FXPageControl.h"
 
-@interface SEHouseListingImageCell ()
+#define PAGE_CONTROL_HEIGHT 36
 
-@property (nonatomic, strong) UIImageView *previewImage;
+@interface SEHouseListingImageCell () <iCarouselDataSource, iCarouselDelegate>
+
+@property (nonatomic, strong) iCarousel *carousel;
+@property (nonatomic, strong) FXPageControl *pageControl;
+@property (nonatomic, strong) UIView *shadowFade;
 
 @end
 
 @implementation SEHouseListingImageCell
 
+- (void)initialize
+{
+	[super initialize];
+	self.selectionStyle = UITableViewCellSelectionStyleNone;
+}
+
 - (void)layoutSubviews
 {
 	[super layoutSubviews];
-	[self.cellBackground addSubview:self.previewImage];
+	[self.cellBackground addSubview:self.carousel];
+//	[self.cellBackground addSubview:self.shadowFade];
+	[self.cellBackground addSubview:self.pageControl];
+}
+
+#pragma mark -
+#pragma mark Carousel Delegate
+
+- (UIView *)carousel:(iCarousel *)carousel viewForItemAtIndex:(NSUInteger)index reusingView:(UIView *)view
+{
+	return [self createTempImage:index + 2];
+}
+
+- (void)carouselCurrentItemIndexDidChange:(iCarousel *)carousel
+{
+	self.pageControl.currentPage = carousel.currentItemIndex;
+}
+
+- (CGFloat)carousel:(iCarousel *)carousel valueForOption:(iCarouselOption)option withDefault:(CGFloat)value
+{
+	switch (option) {
+		case iCarouselOptionSpacing:
+			return 1.00;
+		case iCarouselOptionWrap:
+			return 0;
+		case iCarouselOptionFadeMin:
+			return 0.0f;
+		case iCarouselOptionFadeMax:
+			return 0.0f;
+		case iCarouselOptionFadeMinAlpha:
+			return 1.0f;
+		default:
+			return value;
+	}
+}
+
+- (NSUInteger)numberOfItemsInCarousel:(iCarousel *)carousel
+{
+	return 3;
 }
 
 #pragma mark -
 #pragma mark Props
 
-- (UIImageView *)previewImage
+- (iCarousel *)carousel
 {
-	CREATE_THREAD_SAFE_INSTANCE(_previewImage, ^{
-		_previewImage = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0,
-																	  __blockself.cellBackground.bounds.size.width,
-																	  [SEHouseListingImageCell heightForRow])];
-		_previewImage.contentMode = UIViewContentModeCenter;
-		_previewImage.clipsToBounds = YES;
-		_previewImage.backgroundColor = [UIColor blackColor];
-		_previewImage.autoresizingMask = UIViewAutoresizingFlexibleWidth;
-		_previewImage.image = [UIImage imageNamed:@"discoverbg.jpeg"];
+	CREATE_THREAD_SAFE_INSTANCE(_carousel, ^{
+		_carousel = [[iCarousel alloc] initWithFrame:__blockself.cellBackground.bounds];
+		_carousel.backgroundColor = SE_COLOR_GRAY_BLUE_DARK;
+		_carousel.type = iCarouselTypeLinear;
+		_carousel.delegate = __blockself;
+		_carousel.dataSource = __blockself;
+		_carousel.decelerationRate = 0.3;
+		_carousel.pagingEnabled = YES;
+		_carousel.bounces = YES;
+		_carousel.bounceDistance = 0.10;
+		_carousel.stopAtItemBoundary = YES;
+		_carousel.ignorePerpendicularSwipes = YES;
+		_carousel.vertical = NO;
+		_carousel.scrollSpeed = 2.0;
+		_carousel.clipsToBounds = YES;
 	});
 }
+
+- (UIImageView *)createTempImage:(int)index
+{
+	UIImageView *_previewImage;
+	_previewImage = [[UIImageView alloc] initWithFrame:self.carousel.bounds];
+	_previewImage.contentMode = UIViewContentModeCenter;
+	_previewImage.clipsToBounds = YES;
+	_previewImage.backgroundColor = [UIColor blackColor];
+	_previewImage.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+	_previewImage.image = [UIImage imageNamed:[NSString stringWithFormat:@"home%d.jpg", index]];
+	return _previewImage;
+}
+
+- (FXPageControl *)pageControl
+{
+	CREATE_THREAD_SAFE_INSTANCE(_pageControl, ^{
+		_pageControl = [[FXPageControl alloc] initWithFrame:CGRectMake(0, ViewHeight(__blockself.cellBackground) - PAGE_CONTROL_HEIGHT,
+																	   ViewWidth(__blockself.cellBackground),
+																	   PAGE_CONTROL_HEIGHT)];
+		_pageControl.autoresizingMask = UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleWidth;
+		_pageControl.numberOfPages = 3;
+		_pageControl.backgroundColor = [UIColor colorWithWhite:0 alpha:0.5f];
+		[_pageControl setDotColor:[UIColor colorWithWhite:1.0f alpha:0.5f]];
+		[_pageControl setSelectedDotColor:[UIColor whiteColor]];
+		[_pageControl setUp];
+	});
+}
+
+- (UIView *)shadowFade
+{
+	CREATE_THREAD_SAFE_INSTANCE(_shadowFade, ^{
+		_shadowFade = [[UIView alloc] initWithFrame:__blockself.cellBackground.bounds];
+		_shadowFade.autoresizingMask = UIViewAutoresizingFlexibleTopMargin;
+		CAGradientLayer *gradientLayer = [CAGradientLayer layer];
+		gradientLayer.masksToBounds = NO;
+		gradientLayer.frame = _shadowFade.bounds;
+		
+		NSMutableArray *colors = [NSMutableArray array];
+		[colors addObject:(id)[UIColor colorWithWhite:0.0f alpha:0.0f].CGColor];
+		[colors addObject:(id)[UIColor colorWithWhite:0.0f alpha:1.0f].CGColor];
+		
+		gradientLayer.colors = colors;
+		
+		NSMutableArray *locations = [NSMutableArray array];
+		[locations addObject:[NSNumber numberWithFloat:0.5f]];
+		[locations addObject:[NSNumber numberWithFloat:1.0f]];
+		
+		gradientLayer.locations = locations;
+		
+		[_shadowFade.layer addSublayer:gradientLayer];
+	});
+}
+
 
 + (CGFloat)heightForRow
 {
