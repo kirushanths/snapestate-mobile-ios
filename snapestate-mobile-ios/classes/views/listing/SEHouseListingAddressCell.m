@@ -35,7 +35,7 @@
 	CREATE_THREAD_SAFE_INSTANCE(_streeLabel, ^{
 		_streeLabel = [[UILabel alloc] initWithFrame:CGRectMake(LISTING_CELL_ICON_WIDTH,
 																LISTING_CELL_PADDING,
-																ViewWidth(__blockself.cellBackground) - LISTING_CELL_PADDING - LISTING_CELL_ICON_HEIGHT,
+																ViewWidth(__blockself.cellBackground) - LISTING_CELL_PADDING - LISTING_CELL_ICON_WIDTH,
 																LISTING_CELL_ICON_HEIGHT)];
 		_streeLabel.backgroundColor = [UIColor clearColor];
 		_streeLabel.textColor = [UIColor grayColor];
@@ -49,7 +49,7 @@
 	CREATE_THREAD_SAFE_INSTANCE(_locationLabel, ^{
 		_locationLabel = [[UILabel alloc] initWithFrame:CGRectMake(LISTING_CELL_ICON_WIDTH,
 																   LISTING_CELL_PADDING + (LISTING_CELL_ICON_HEIGHT),
-																   ViewWidth(__blockself.cellBackground) - LISTING_CELL_PADDING - LISTING_CELL_ICON_HEIGHT,
+																   ViewWidth(__blockself.cellBackground) - LISTING_CELL_PADDING - LISTING_CELL_ICON_WIDTH,
 																   LISTING_CELL_ICON_HEIGHT)];
 		_locationLabel.backgroundColor = [UIColor clearColor];
 		_locationLabel.textColor = [UIColor grayColor];
