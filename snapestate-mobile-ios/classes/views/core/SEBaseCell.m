@@ -10,7 +10,6 @@
 
 @implementation SEBaseCell
 
-
 -(id)init
 {
     self = [super initWithStyle:UITableViewCellStyleDefault reuseIdentifier:[[self class] reuseIdentifier]];

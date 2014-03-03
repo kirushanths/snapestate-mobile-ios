@@ -22,7 +22,6 @@
 {
     [super viewDidLoad];
 	self.title = @"DISCOVER";
-	self.view.backgroundColor = self.tableView.backgroundColor = SE_COLOR_GRAY_BLUE_DARK;
 	[self.view addSubview:self.tableView];
 	
 	UIBarButtonItem *searchIcon = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSearch target:nil action:nil];
@@ -97,6 +96,7 @@
 	CREATE_THREAD_SAFE_INSTANCE(_tableView, ^{
 		_tableView = [[UITableView alloc] initWithFrame:__blockself.view.bounds];
 		_tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+		_tableView.backgroundColor = [UIColor clearColor];
 		_tableView.delegate = __blockself;
 		_tableView.dataSource = __blockself;
 	});

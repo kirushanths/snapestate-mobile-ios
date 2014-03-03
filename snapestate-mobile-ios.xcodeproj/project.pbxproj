@@ -47,7 +47,6 @@
 		BC583875188B881300301C53 /* SDURLCache.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5837BC188B881300301C53 /* SDURLCache.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		BC583876188B881300301C53 /* UIScrollView+SVInfiniteScrolling.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5837C0188B881300301C53 /* UIScrollView+SVInfiniteScrolling.m */; };
 		BC583877188B881300301C53 /* UIScrollView+SVPullToRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5837C2188B881300301C53 /* UIScrollView+SVPullToRefresh.m */; };
-		BC583878188B881300301C53 /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC5837C4188B881300301C53 /* libTestFlight.a */; };
 		BC583879188B881300301C53 /* UIDevice-Capabilities.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5837CA188B881300301C53 /* UIDevice-Capabilities.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		BC58387A188B881300301C53 /* UIDevice-Hardware.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5837CC188B881300301C53 /* UIDevice-Hardware.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		BC58387C188B881300301C53 /* UIDevice-Orientation.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5837D0188B881300301C53 /* UIDevice-Orientation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -74,7 +73,6 @@
 		BC5838C4188B8A0500301C53 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC5838C3188B8A0500301C53 /* MobileCoreServices.framework */; };
 		BC5838C6188B8A1000301C53 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC5838C5188B8A1000301C53 /* AdSupport.framework */; };
 		BC5838CC188B8A3C00301C53 /* GTMNSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5838CA188B8A3C00301C53 /* GTMNSString+HTML.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		BC5838DF188B8A9A00301C53 /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC5838D6188B8A8100301C53 /* libRestKit.a */; };
 		BC5838E5188B8AE600301C53 /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5838E2188B8AE600301C53 /* KeychainItemWrapper.m */; };
 		BC5838E6188B8AE600301C53 /* wwanconnect.c in Sources */ = {isa = PBXBuildFile; fileRef = BC5838E3188B8AE600301C53 /* wwanconnect.c */; };
 		BC5838E9188CA58600301C53 /* KSBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5838E8188CA58600301C53 /* KSBaseViewController.m */; };
@@ -85,6 +83,20 @@
 		BC616EE318A706C5001FEA86 /* sidebg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC616EE218A706C5001FEA86 /* sidebg@2x.png */; };
 		BC6DF8E518B13D6500070A26 /* icon_location@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC6DF8E418B13D6500070A26 /* icon_location@2x.png */; };
 		BC6DF8EA18B1425500070A26 /* icon_details@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC6DF8E918B1425500070A26 /* icon_details@2x.png */; };
+		BC71E32C18B2F23100360B1F /* SEHouseListingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC71E32B18B2F23100360B1F /* SEHouseListingTableView.m */; };
+		BC71E32F18B2F2C100360B1F /* SEApiBaseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = BC71E32E18B2F2C100360B1F /* SEApiBaseObject.m */; };
+		BC71E33218B2F3C500360B1F /* SEApiListingProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = BC71E33118B2F3C500360B1F /* SEApiListingProperty.m */; };
+		BC71E33518B2F3EE00360B1F /* SEApiListingAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = BC71E33418B2F3EE00360B1F /* SEApiListingAddress.m */; };
+		BC71E33818B2F40500360B1F /* SEApiListingFeature.m in Sources */ = {isa = PBXBuildFile; fileRef = BC71E33718B2F40500360B1F /* SEApiListingFeature.m */; };
+		BC71E33B18B2F41500360B1F /* SEApiListingAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = BC71E33A18B2F41500360B1F /* SEApiListingAgent.m */; };
+		BC71E33E18B2F4A500360B1F /* SEApiListingPropertyImage.m in Sources */ = {isa = PBXBuildFile; fileRef = BC71E33D18B2F4A500360B1F /* SEApiListingPropertyImage.m */; };
+		BC71E35418B2F81100360B1F /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC71E34918B2F7C500360B1F /* libRestKit.a */; };
+		BC71E35A18B2FA1D00360B1F /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC71E35618B2FA1D00360B1F /* libTestFlight.a */; };
+		BC71E35C18B2FA4C00360B1F /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BC71E35B18B2FA4C00360B1F /* libz.dylib */; };
+		BCC9F92F18C4005500DFBCD1 /* SEHouseListingImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC9F92E18C4005500DFBCD1 /* SEHouseListingImageCell.m */; };
+		BCC9F93418C400A300DFBCD1 /* SEHouseListingBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC9F93318C400A300DFBCD1 /* SEHouseListingBaseCell.m */; };
+		BCC9F93718C400B500DFBCD1 /* SEHouseListingAddressCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC9F93618C400B500DFBCD1 /* SEHouseListingAddressCell.m */; };
+		BCC9F93A18C400C200DFBCD1 /* SEHouseListingInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC9F93918C400C200DFBCD1 /* SEHouseListingInfoCell.m */; };
 		BCED8EFC18A6AD23003AC386 /* SEBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BCED8EED18A6AD23003AC386 /* SEBaseCell.m */; };
 		BCED8EFD18A6AD23003AC386 /* SEButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BCED8EEF18A6AD23003AC386 /* SEButton.m */; };
 		BCED8EFE18A6AD23003AC386 /* SETextField.m in Sources */ = {isa = PBXBuildFile; fileRef = BCED8EF118A6AD23003AC386 /* SETextField.m */; };
@@ -125,40 +137,47 @@
 			remoteGlobalIDString = BC11A5AF188B6F120002D8D3;
 			remoteInfo = "snapestate-mobile-ios";
 		};
-		BC5838D5188B8A8100301C53 /* PBXContainerItemProxy */ = {
+		BC71E34818B2F7C500360B1F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = BC5838CE188B8A8000301C53 /* RestKit.xcodeproj */;
+			containerPortal = BC71E34118B2F7C400360B1F /* RestKit.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 25160D1614564E810060A5C5;
 			remoteInfo = RestKit;
 		};
-		BC5838D7188B8A8100301C53 /* PBXContainerItemProxy */ = {
+		BC71E34A18B2F7C500360B1F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = BC5838CE188B8A8000301C53 /* RestKit.xcodeproj */;
+			containerPortal = BC71E34118B2F7C400360B1F /* RestKit.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 25160D2614564E820060A5C5;
 			remoteInfo = RestKitTests;
 		};
-		BC5838D9188B8A8100301C53 /* PBXContainerItemProxy */ = {
+		BC71E34C18B2F7C500360B1F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = BC5838CE188B8A8000301C53 /* RestKit.xcodeproj */;
+			containerPortal = BC71E34118B2F7C400360B1F /* RestKit.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 25160E62145651060060A5C5;
 			remoteInfo = RestKitFramework;
 		};
-		BC5838DB188B8A8100301C53 /* PBXContainerItemProxy */ = {
+		BC71E34E18B2F7C500360B1F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = BC5838CE188B8A8000301C53 /* RestKit.xcodeproj */;
+			containerPortal = BC71E34118B2F7C400360B1F /* RestKit.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 25160E78145651060060A5C5;
 			remoteInfo = RestKitFrameworkTests;
 		};
-		BC5838DD188B8A8500301C53 /* PBXContainerItemProxy */ = {
+		BC71E35018B2F7F200360B1F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = BC5838CE188B8A8000301C53 /* RestKit.xcodeproj */;
+			containerPortal = BC71E34118B2F7C400360B1F /* RestKit.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 25160D1514564E810060A5C5;
 			remoteInfo = RestKit;
+		};
+		BC71E35218B2F7F200360B1F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC71E34118B2F7C400360B1F /* RestKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 25160E61145651060060A5C5;
+			remoteInfo = RestKitFramework;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -217,10 +236,6 @@
 		BC5837C0188B881300301C53 /* UIScrollView+SVInfiniteScrolling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+SVInfiniteScrolling.m"; sourceTree = "<group>"; };
 		BC5837C1188B881300301C53 /* UIScrollView+SVPullToRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+SVPullToRefresh.h"; sourceTree = "<group>"; };
 		BC5837C2188B881300301C53 /* UIScrollView+SVPullToRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+SVPullToRefresh.m"; sourceTree = "<group>"; };
-		BC5837C4188B881300301C53 /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
-		BC5837C5188B881300301C53 /* TestFlight+AsyncLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestFlight+AsyncLogging.h"; sourceTree = "<group>"; };
-		BC5837C6188B881300301C53 /* TestFlight+ManualSessions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestFlight+ManualSessions.h"; sourceTree = "<group>"; };
-		BC5837C7188B881300301C53 /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
 		BC5837C9188B881300301C53 /* UIDevice-Capabilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice-Capabilities.h"; sourceTree = "<group>"; };
 		BC5837CA188B881300301C53 /* UIDevice-Capabilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice-Capabilities.m"; sourceTree = "<group>"; };
 		BC5837CB188B881300301C53 /* UIDevice-Hardware.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice-Hardware.h"; sourceTree = "<group>"; };
@@ -261,7 +276,6 @@
 		BC5838C9188B8A3C00301C53 /* GTMNSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GTMNSString+HTML.h"; sourceTree = "<group>"; };
 		BC5838CA188B8A3C00301C53 /* GTMNSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GTMNSString+HTML.m"; sourceTree = "<group>"; };
 		BC5838CB188B8A3C00301C53 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
-		BC5838CE188B8A8000301C53 /* RestKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RestKit.xcodeproj; path = RestKit/RestKit.xcodeproj; sourceTree = "<group>"; };
 		BC5838E1188B8AE600301C53 /* KeychainItemWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainItemWrapper.h; sourceTree = "<group>"; };
 		BC5838E2188B8AE600301C53 /* KeychainItemWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainItemWrapper.m; sourceTree = "<group>"; };
 		BC5838E3188B8AE600301C53 /* wwanconnect.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wwanconnect.c; sourceTree = "<group>"; };
@@ -277,6 +291,34 @@
 		BC616EE218A706C5001FEA86 /* sidebg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sidebg@2x.png"; sourceTree = "<group>"; };
 		BC6DF8E418B13D6500070A26 /* icon_location@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_location@2x.png"; sourceTree = "<group>"; };
 		BC6DF8E918B1425500070A26 /* icon_details@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_details@2x.png"; sourceTree = "<group>"; };
+		BC71E32A18B2F23100360B1F /* SEHouseListingTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEHouseListingTableView.h; sourceTree = "<group>"; };
+		BC71E32B18B2F23100360B1F /* SEHouseListingTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEHouseListingTableView.m; sourceTree = "<group>"; };
+		BC71E32D18B2F2C100360B1F /* SEApiBaseObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEApiBaseObject.h; sourceTree = "<group>"; };
+		BC71E32E18B2F2C100360B1F /* SEApiBaseObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEApiBaseObject.m; sourceTree = "<group>"; };
+		BC71E33018B2F3C500360B1F /* SEApiListingProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEApiListingProperty.h; sourceTree = "<group>"; };
+		BC71E33118B2F3C500360B1F /* SEApiListingProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEApiListingProperty.m; sourceTree = "<group>"; };
+		BC71E33318B2F3EE00360B1F /* SEApiListingAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEApiListingAddress.h; sourceTree = "<group>"; };
+		BC71E33418B2F3EE00360B1F /* SEApiListingAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEApiListingAddress.m; sourceTree = "<group>"; };
+		BC71E33618B2F40500360B1F /* SEApiListingFeature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEApiListingFeature.h; sourceTree = "<group>"; };
+		BC71E33718B2F40500360B1F /* SEApiListingFeature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEApiListingFeature.m; sourceTree = "<group>"; };
+		BC71E33918B2F41500360B1F /* SEApiListingAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEApiListingAgent.h; sourceTree = "<group>"; };
+		BC71E33A18B2F41500360B1F /* SEApiListingAgent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEApiListingAgent.m; sourceTree = "<group>"; };
+		BC71E33C18B2F4A500360B1F /* SEApiListingPropertyImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEApiListingPropertyImage.h; sourceTree = "<group>"; };
+		BC71E33D18B2F4A500360B1F /* SEApiListingPropertyImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEApiListingPropertyImage.m; sourceTree = "<group>"; };
+		BC71E34118B2F7C400360B1F /* RestKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RestKit.xcodeproj; path = RestKit/RestKit.xcodeproj; sourceTree = "<group>"; };
+		BC71E35618B2FA1D00360B1F /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
+		BC71E35718B2FA1D00360B1F /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
+		BC71E35818B2FA1D00360B1F /* TestFlight+AsyncLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestFlight+AsyncLogging.h"; sourceTree = "<group>"; };
+		BC71E35918B2FA1D00360B1F /* TestFlight+ManualSessions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestFlight+ManualSessions.h"; sourceTree = "<group>"; };
+		BC71E35B18B2FA4C00360B1F /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		BCC9F92D18C4005500DFBCD1 /* SEHouseListingImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEHouseListingImageCell.h; sourceTree = "<group>"; };
+		BCC9F92E18C4005500DFBCD1 /* SEHouseListingImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEHouseListingImageCell.m; sourceTree = "<group>"; };
+		BCC9F93218C400A300DFBCD1 /* SEHouseListingBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEHouseListingBaseCell.h; sourceTree = "<group>"; };
+		BCC9F93318C400A300DFBCD1 /* SEHouseListingBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEHouseListingBaseCell.m; sourceTree = "<group>"; };
+		BCC9F93518C400B500DFBCD1 /* SEHouseListingAddressCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEHouseListingAddressCell.h; sourceTree = "<group>"; };
+		BCC9F93618C400B500DFBCD1 /* SEHouseListingAddressCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEHouseListingAddressCell.m; sourceTree = "<group>"; };
+		BCC9F93818C400C200DFBCD1 /* SEHouseListingInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEHouseListingInfoCell.h; sourceTree = "<group>"; };
+		BCC9F93918C400C200DFBCD1 /* SEHouseListingInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEHouseListingInfoCell.m; sourceTree = "<group>"; };
 		BCED8EEC18A6AD23003AC386 /* SEBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEBaseCell.h; sourceTree = "<group>"; };
 		BCED8EED18A6AD23003AC386 /* SEBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEBaseCell.m; sourceTree = "<group>"; };
 		BCED8EEE18A6AD23003AC386 /* SEButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEButton.h; sourceTree = "<group>"; };
@@ -331,7 +373,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC5838DF188B8A9A00301C53 /* libRestKit.a in Frameworks */,
+				BC71E35C18B2FA4C00360B1F /* libz.dylib in Frameworks */,
+				BC71E35418B2F81100360B1F /* libRestKit.a in Frameworks */,
 				BC5838C6188B8A1000301C53 /* AdSupport.framework in Frameworks */,
 				BC5838C4188B8A0500301C53 /* MobileCoreServices.framework in Frameworks */,
 				BC5838C2188B89FF00301C53 /* SystemConfiguration.framework in Frameworks */,
@@ -346,9 +389,9 @@
 				BC5838AE188B89AF00301C53 /* CoreAudio.framework in Frameworks */,
 				BC5838AF188B89AF00301C53 /* CoreData.framework in Frameworks */,
 				BC5838B0188B89AF00301C53 /* CoreLocation.framework in Frameworks */,
+				BC71E35A18B2FA1D00360B1F /* libTestFlight.a in Frameworks */,
 				BC5838AA188B89A200301C53 /* Security.framework in Frameworks */,
 				BC5838A8188B899E00301C53 /* CFNetwork.framework in Frameworks */,
-				BC583878188B881300301C53 /* libTestFlight.a in Frameworks */,
 				BC11A5B6188B6F120002D8D3 /* CoreGraphics.framework in Frameworks */,
 				BC11A5B8188B6F120002D8D3 /* UIKit.framework in Frameworks */,
 				BC11A5B4188B6F120002D8D3 /* Foundation.framework in Frameworks */,
@@ -421,6 +464,7 @@
 		BC11A5B2188B6F120002D8D3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BC71E35B18B2FA4C00360B1F /* libz.dylib */,
 				BC5838C5188B8A1000301C53 /* AdSupport.framework */,
 				BC5838C3188B8A0500301C53 /* MobileCoreServices.framework */,
 				BC5838C1188B89FF00301C53 /* SystemConfiguration.framework */,
@@ -551,10 +595,10 @@
 		BC5837C3188B881300301C53 /* TestFlight */ = {
 			isa = PBXGroup;
 			children = (
-				BC5837C4188B881300301C53 /* libTestFlight.a */,
-				BC5837C5188B881300301C53 /* TestFlight+AsyncLogging.h */,
-				BC5837C6188B881300301C53 /* TestFlight+ManualSessions.h */,
-				BC5837C7188B881300301C53 /* TestFlight.h */,
+				BC71E35618B2FA1D00360B1F /* libTestFlight.a */,
+				BC71E35718B2FA1D00360B1F /* TestFlight.h */,
+				BC71E35818B2FA1D00360B1F /* TestFlight+AsyncLogging.h */,
+				BC71E35918B2FA1D00360B1F /* TestFlight+ManualSessions.h */,
 			);
 			path = TestFlight;
 			sourceTree = "<group>";
@@ -640,6 +684,18 @@
 		BC5837E1188B881300301C53 /* models */ = {
 			isa = PBXGroup;
 			children = (
+				BC71E32D18B2F2C100360B1F /* SEApiBaseObject.h */,
+				BC71E32E18B2F2C100360B1F /* SEApiBaseObject.m */,
+				BC71E33018B2F3C500360B1F /* SEApiListingProperty.h */,
+				BC71E33118B2F3C500360B1F /* SEApiListingProperty.m */,
+				BC71E33318B2F3EE00360B1F /* SEApiListingAddress.h */,
+				BC71E33418B2F3EE00360B1F /* SEApiListingAddress.m */,
+				BC71E33618B2F40500360B1F /* SEApiListingFeature.h */,
+				BC71E33718B2F40500360B1F /* SEApiListingFeature.m */,
+				BC71E33918B2F41500360B1F /* SEApiListingAgent.h */,
+				BC71E33A18B2F41500360B1F /* SEApiListingAgent.m */,
+				BC71E33C18B2F4A500360B1F /* SEApiListingPropertyImage.h */,
+				BC71E33D18B2F4A500360B1F /* SEApiListingPropertyImage.m */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -664,6 +720,7 @@
 		BC5837E7188B881300301C53 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				BC71E32618B2F21400360B1F /* listing */,
 				BCED8F3C18A6F280003AC386 /* sidemenu */,
 				BCED8EEA18A6AD23003AC386 /* discover */,
 				BCED8EEB18A6AD23003AC386 /* core */,
@@ -692,20 +749,9 @@
 		BC5838CD188B8A7400301C53 /* RestKit */ = {
 			isa = PBXGroup;
 			children = (
-				BC5838CE188B8A8000301C53 /* RestKit.xcodeproj */,
+				BC71E34118B2F7C400360B1F /* RestKit.xcodeproj */,
 			);
 			name = RestKit;
-			sourceTree = "<group>";
-		};
-		BC5838CF188B8A8000301C53 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				BC5838D6188B8A8100301C53 /* libRestKit.a */,
-				BC5838D8188B8A8100301C53 /* RestKitTests.octest */,
-				BC5838DA188B8A8100301C53 /* RestKit.framework */,
-				BC5838DC188B8A8100301C53 /* RestKitFrameworkTests.octest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		BC5838E0188B8AE600301C53 /* AppleSampleCode */ = {
@@ -728,6 +774,34 @@
 				BC5838F4188CC7E400301C53 /* loginbgraw.jpg */,
 			);
 			path = backgrounds;
+			sourceTree = "<group>";
+		};
+		BC71E32618B2F21400360B1F /* listing */ = {
+			isa = PBXGroup;
+			children = (
+				BC71E32A18B2F23100360B1F /* SEHouseListingTableView.h */,
+				BC71E32B18B2F23100360B1F /* SEHouseListingTableView.m */,
+				BCC9F92D18C4005500DFBCD1 /* SEHouseListingImageCell.h */,
+				BCC9F92E18C4005500DFBCD1 /* SEHouseListingImageCell.m */,
+				BCC9F93218C400A300DFBCD1 /* SEHouseListingBaseCell.h */,
+				BCC9F93318C400A300DFBCD1 /* SEHouseListingBaseCell.m */,
+				BCC9F93518C400B500DFBCD1 /* SEHouseListingAddressCell.h */,
+				BCC9F93618C400B500DFBCD1 /* SEHouseListingAddressCell.m */,
+				BCC9F93818C400C200DFBCD1 /* SEHouseListingInfoCell.h */,
+				BCC9F93918C400C200DFBCD1 /* SEHouseListingInfoCell.m */,
+			);
+			path = listing;
+			sourceTree = "<group>";
+		};
+		BC71E34218B2F7C400360B1F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BC71E34918B2F7C500360B1F /* libRestKit.a */,
+				BC71E34B18B2F7C500360B1F /* RestKitTests.octest */,
+				BC71E34D18B2F7C500360B1F /* RestKit.framework */,
+				BC71E34F18B2F7C500360B1F /* RestKitFrameworkTests.octest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		BCED8EEA18A6AD23003AC386 /* discover */ = {
@@ -840,7 +914,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				BC5838DE188B8A8500301C53 /* PBXTargetDependency */,
+				BC71E35118B2F7F200360B1F /* PBXTargetDependency */,
+				BC71E35318B2F7F200360B1F /* PBXTargetDependency */,
 			);
 			name = "snapestate-mobile-ios";
 			productName = "snapestate-mobile-ios";
@@ -892,8 +967,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = BC5838CF188B8A8000301C53 /* Products */;
-					ProjectRef = BC5838CE188B8A8000301C53 /* RestKit.xcodeproj */;
+					ProductGroup = BC71E34218B2F7C400360B1F /* Products */;
+					ProjectRef = BC71E34118B2F7C400360B1F /* RestKit.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -905,32 +980,32 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		BC5838D6188B8A8100301C53 /* libRestKit.a */ = {
+		BC71E34918B2F7C500360B1F /* libRestKit.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libRestKit.a;
-			remoteRef = BC5838D5188B8A8100301C53 /* PBXContainerItemProxy */;
+			remoteRef = BC71E34818B2F7C500360B1F /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		BC5838D8188B8A8100301C53 /* RestKitTests.octest */ = {
+		BC71E34B18B2F7C500360B1F /* RestKitTests.octest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = RestKitTests.octest;
-			remoteRef = BC5838D7188B8A8100301C53 /* PBXContainerItemProxy */;
+			remoteRef = BC71E34A18B2F7C500360B1F /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		BC5838DA188B8A8100301C53 /* RestKit.framework */ = {
+		BC71E34D18B2F7C500360B1F /* RestKit.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = RestKit.framework;
-			remoteRef = BC5838D9188B8A8100301C53 /* PBXContainerItemProxy */;
+			remoteRef = BC71E34C18B2F7C500360B1F /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		BC5838DC188B8A8100301C53 /* RestKitFrameworkTests.octest */ = {
+		BC71E34F18B2F7C500360B1F /* RestKitFrameworkTests.octest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = RestKitFrameworkTests.octest;
-			remoteRef = BC5838DB188B8A8100301C53 /* PBXContainerItemProxy */;
+			remoteRef = BC71E34E18B2F7C500360B1F /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -998,22 +1073,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC71E32C18B2F23100360B1F /* SEHouseListingTableView.m in Sources */,
 				BC04D29A18B088B80052FB92 /* SEPropertyListingViewController.m in Sources */,
 				BC583875188B881300301C53 /* SDURLCache.m in Sources */,
 				BC583881188B881300301C53 /* UIImage+Additions.m in Sources */,
+				BC71E33818B2F40500360B1F /* SEApiListingFeature.m in Sources */,
 				BC583880188B881300301C53 /* NSString+HTML.m in Sources */,
 				BCED8EFD18A6AD23003AC386 /* SEButton.m in Sources */,
 				BC58387E188B881300301C53 /* NSError+Additions.m in Sources */,
 				BCED8F2318A6B5AC003AC386 /* UILabel+LatoFont.m in Sources */,
+				BC71E33B18B2F41500360B1F /* SEApiListingAgent.m in Sources */,
 				BC5838EC188CA59900301C53 /* SELoginViewController.m in Sources */,
 				BCED8F3818A6F00A003AC386 /* UIViewController+MMDrawerController.m in Sources */,
+				BC71E33518B2F3EE00360B1F /* SEApiListingAddress.m in Sources */,
 				BC5412A3189DED8900BC0D68 /* SEDiscoverViewController.m in Sources */,
 				BC583872188B881300301C53 /* RMPhoneFormat.m in Sources */,
 				BC11A5C4188B6F120002D8D3 /* SEAppDelegate.m in Sources */,
+				BC71E33218B2F3C500360B1F /* SEApiListingProperty.m in Sources */,
 				BC583879188B881300301C53 /* UIDevice-Capabilities.m in Sources */,
 				BC58387D188B881300301C53 /* UIDevice-Reachability.m in Sources */,
 				BC5838E5188B8AE600301C53 /* KeychainItemWrapper.m in Sources */,
 				BCED8F3718A6F00A003AC386 /* MMDrawerVisualState.m in Sources */,
+				BCC9F92F18C4005500DFBCD1 /* SEHouseListingImageCell.m in Sources */,
+				BCC9F93718C400B500DFBCD1 /* SEHouseListingAddressCell.m in Sources */,
 				BC583874188B881300301C53 /* SDCachedURLResponse.m in Sources */,
 				BC5838E6188B8AE600301C53 /* wwanconnect.c in Sources */,
 				BC583877188B881300301C53 /* UIScrollView+SVPullToRefresh.m in Sources */,
@@ -1027,9 +1109,12 @@
 				BC04D29718B085FB0052FB92 /* SEBaseViewController.m in Sources */,
 				BC58387C188B881300301C53 /* UIDevice-Orientation.m in Sources */,
 				BCED8F0118A6AD23003AC386 /* SECellBackground.m in Sources */,
+				BC71E32F18B2F2C100360B1F /* SEApiBaseObject.m in Sources */,
 				BC11A5C0188B6F120002D8D3 /* main.m in Sources */,
+				BC71E33E18B2F4A500360B1F /* SEApiListingPropertyImage.m in Sources */,
 				BCED8F3F18A6F28B003AC386 /* SESideCell.m in Sources */,
 				BC5837E9188B881300301C53 /* JSONKit.m in Sources */,
+				BCC9F93A18C400C200DFBCD1 /* SEHouseListingInfoCell.m in Sources */,
 				BCED8F3518A6F00A003AC386 /* MMDrawerBarButtonItem.m in Sources */,
 				BC583876188B881300301C53 /* UIScrollView+SVInfiniteScrolling.m in Sources */,
 				BC58387A188B881300301C53 /* UIDevice-Hardware.m in Sources */,
@@ -1037,6 +1122,7 @@
 				BCED8EFC18A6AD23003AC386 /* SEBaseCell.m in Sources */,
 				BC5838F1188CA84A00301C53 /* SENavigationViewController.m in Sources */,
 				BCED8F0318A6AD23003AC386 /* SERowSeparator.m in Sources */,
+				BCC9F93418C400A300DFBCD1 /* SEHouseListingBaseCell.m in Sources */,
 				BCED8F3618A6F00A003AC386 /* MMDrawerController.m in Sources */,
 				BCED8F3B18A6F1C6003AC386 /* SESideMenuViewController.m in Sources */,
 				BCED8F0018A6AD23003AC386 /* SEAccessoryView.m in Sources */,
@@ -1059,10 +1145,15 @@
 			target = BC11A5AF188B6F120002D8D3 /* snapestate-mobile-ios */;
 			targetProxy = BC11A5D0188B6F120002D8D3 /* PBXContainerItemProxy */;
 		};
-		BC5838DE188B8A8500301C53 /* PBXTargetDependency */ = {
+		BC71E35118B2F7F200360B1F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = RestKit;
-			targetProxy = BC5838DD188B8A8500301C53 /* PBXContainerItemProxy */;
+			targetProxy = BC71E35018B2F7F200360B1F /* PBXContainerItemProxy */;
+		};
+		BC71E35318B2F7F200360B1F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RestKitFramework;
+			targetProxy = BC71E35218B2F7F200360B1F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1175,16 +1266,25 @@
 		BC11A5DD188B6F120002D8D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/snapestate-mobile-ios/vendor/";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "snapestate-mobile-ios/snapestate-mobile-ios-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/snapestate-mobile-ios/vendor/",
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(BUILT_PRODUCTS_DIR)/../../Headers",
+				);
 				INFOPLIST_FILE = "snapestate-mobile-ios/snapestate-mobile-ios-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/kirushanthsakthivetpillai/Documents/Kiru/Work/SnapEstate/snapestate-mobile-ios/snapestate-mobile-ios/vendor/Flurry",
+					"$(SRCROOT)/snapestate-mobile-ios/vendor/",
 					"/Users/kirushanthsakthivetpillai/Documents/Kiru/Work/SnapEstate/snapestate-mobile-ios/snapestate-mobile-ios/vendor/TestFlight",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -1193,16 +1293,25 @@
 		BC11A5DE188B6F120002D8D3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/snapestate-mobile-ios/vendor/";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "snapestate-mobile-ios/snapestate-mobile-ios-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/snapestate-mobile-ios/vendor/",
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(BUILT_PRODUCTS_DIR)/../../Headers",
+				);
 				INFOPLIST_FILE = "snapestate-mobile-ios/snapestate-mobile-ios-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/kirushanthsakthivetpillai/Documents/Kiru/Work/SnapEstate/snapestate-mobile-ios/snapestate-mobile-ios/vendor/Flurry",
+					"$(SRCROOT)/snapestate-mobile-ios/vendor/",
 					"/Users/kirushanthsakthivetpillai/Documents/Kiru/Work/SnapEstate/snapestate-mobile-ios/snapestate-mobile-ios/vendor/TestFlight",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
