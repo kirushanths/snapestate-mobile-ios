@@ -9,6 +9,7 @@
 #import "SEHouseListingImageCell.h"
 #import "iCarousel.h"
 #import "FXPageControl.h"
+#import "ILTranslucentView.h"
 
 #define PAGE_CONTROL_HEIGHT 36
 
@@ -17,6 +18,7 @@
 @property (nonatomic, strong) iCarousel *carousel;
 @property (nonatomic, strong) FXPageControl *pageControl;
 @property (nonatomic, strong) UIView *shadowFade;
+@property (nonatomic, strong) ILTranslucentView *blurView;
 
 @end
 
@@ -31,8 +33,10 @@
 - (void)layoutSubviews
 {
 	[super layoutSubviews];
+	[self.cellBackground setBaseBackgroundColor:SE_COLOR_GRAY_BLUE_DARK];
 	[self.cellBackground addSubview:self.carousel];
 //	[self.cellBackground addSubview:self.shadowFade];
+	[self.cellBackground addSubview:self.blurView];
 	[self.cellBackground addSubview:self.pageControl];
 }
 
@@ -79,7 +83,7 @@
 {
 	CREATE_THREAD_SAFE_INSTANCE(_carousel, ^{
 		_carousel = [[iCarousel alloc] initWithFrame:__blockself.cellBackground.bounds];
-		_carousel.backgroundColor = SE_COLOR_GRAY_BLUE_DARK;
+		_carousel.backgroundColor = [UIColor colorWithWhite:1.0f alpha:0.8f];
 		_carousel.type = iCarouselTypeLinear;
 		_carousel.delegate = __blockself;
 		_carousel.dataSource = __blockself;
@@ -115,7 +119,7 @@
 																	   PAGE_CONTROL_HEIGHT)];
 		_pageControl.autoresizingMask = UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleWidth;
 		_pageControl.numberOfPages = 3;
-		_pageControl.backgroundColor = [UIColor colorWithWhite:0 alpha:0.5f];
+		_pageControl.backgroundColor = [UIColor clearColor];
 		[_pageControl setDotColor:[UIColor colorWithWhite:1.0f alpha:0.5f]];
 		[_pageControl setSelectedDotColor:[UIColor whiteColor]];
 		[_pageControl setUp];
@@ -147,6 +151,19 @@
 	});
 }
 
+- (ILTranslucentView *)blurView
+{
+	CREATE_THREAD_SAFE_INSTANCE(_blurView, ^{
+		_blurView = [[ILTranslucentView alloc] initWithFrame:__blockself.pageControl.frame];
+		if (SYSTEM_VERSION_MIN_SDK_7) {
+			_blurView.translucentAlpha = 1.0f;
+			_blurView.translucentTintColor = [UIColor clearColor];
+			_blurView.backgroundColor = [SE_COLOR_GRAY_BLUE_DARK colorWithAlphaComponent:0.3f]; // [UIColor colorWithRed:0.93f green:0.95f blue:0.96f alpha:0.4f];
+		} else {
+			_blurView.backgroundColor = [SE_COLOR_GRAY_BLUE_DARK colorWithAlphaComponent:0.9f]; // [UIColor colorWithRed:0.93f green:0.95f blue:0.96f alpha:0.8f];
+		}
+	});
+}
 
 + (CGFloat)heightForRow
 {

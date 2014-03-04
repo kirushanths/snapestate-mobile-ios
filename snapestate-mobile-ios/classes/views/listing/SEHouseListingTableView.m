@@ -10,9 +10,11 @@
 #import "SEHouseListingImageCell.h"
 #import "SEHouseListingAddressCell.h"
 #import "SEHouseListingInfoCell.h"
+#import "SEHouseListingPriceCell.h"
 
 enum SE_LISTING_ROWS {
 	SE_LISTING_ROW_PREVIEW_IMAGE,
+	SE_LISTING_ROW_PRICE,
 	SE_LISTING_ROW_ADDRESS,
 	SE_LISTING_ROW_FEATURE,
 	SE_LISTING_NUM_ROWS
@@ -52,6 +54,8 @@ enum SE_LISTING_ROWS {
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
 	switch (indexPath.row) {
+		case SE_LISTING_ROW_PRICE:
+			return [SEHouseListingPriceCell heightForRow];
 		case SE_LISTING_ROW_PREVIEW_IMAGE:
 			return [SEHouseListingImageCell heightForRow];
 			break;
@@ -71,6 +75,11 @@ enum SE_LISTING_ROWS {
 		case SE_LISTING_ROW_PREVIEW_IMAGE: {
 			SEHouseListingImageCell *cell = [tableView dequeueReusableCellWithIdentifier:[SEHouseListingImageCell reuseIdentifier]];
 			if (!cell) cell = [[SEHouseListingImageCell alloc] init];
+			return cell;
+		}
+		case SE_LISTING_ROW_PRICE: {
+			SEHouseListingPriceCell *cell = [tableView dequeueReusableCellWithIdentifier:[SEHouseListingPriceCell reuseIdentifier]];
+			if (!cell) cell = [[SEHouseListingPriceCell alloc] init];
 			return cell;
 		}
 		case SE_LISTING_ROW_ADDRESS: {

@@ -27,7 +27,7 @@
 #define SE_COLOR_BLUE_LIGHT_TEXT [UIColor colorWithRed:18.0f/255.0f green:100.0f/255.0f blue:187.0f/255.0f alpha:0.6f]
 #define SE_COLOR_BLUE_LIGHT_BG [UIColor colorWithRed:232.0f/255.0f green:246.0f/255.0f blue:1.0f alpha:1.0f]   //#e8f6ff
 
-#define SE_COLOR_GRAY_SEPARATOR [UIColor colorWithRed:0.85f green:0.86f blue:0.87f alpha:0.7f]
+#define SE_COLOR_GRAY_SEPARATOR [UIColor colorWithRed:0.85f green:0.86f blue:0.87f alpha:0.4f]
 #define SE_COLOR_GRAY_BG [UIColor colorWithRed:0.93f green:0.95f blue:0.96f alpha:1.0f]
 
 #define SE_COLOR_GRAY [UIColor colorWithRed:0.88f green:0.88f blue:0.88f alpha:1.0f]

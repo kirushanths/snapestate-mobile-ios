@@ -20,6 +20,7 @@
 - (void)layoutSubviews
 {
 	[super layoutSubviews];
+	self.cellDivider.hidden = NO;
 	self.cellIcon.image = [UIImage imageNamed:@"icon_location.png"];
 	self.cellIcon.alpha = 0.2f;
 	[self.cellBackground addSubview:self.cellIcon];

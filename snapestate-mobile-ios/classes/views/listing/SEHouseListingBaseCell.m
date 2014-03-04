@@ -10,10 +10,20 @@
 
 @implementation SEHouseListingBaseCell
 
+@synthesize cellBackground = _cellBackground;
+
 - (void)designCell
 {
 	[super designCell];
 	self.cellDivider.hidden = YES;
+}
+
+- (SECellBackground *)cellBackground
+{
+	CREATE_THREAD_SAFE_INSTANCE(_cellBackground, ^{
+		_cellBackground = [super cellBackground];
+//		[_cellBackground setBaseBackgroundColor:[UIColor clearColor]];
+	});
 }
 
 #pragma mark -

@@ -9,6 +9,7 @@
 #import "SEPropertyListingViewController.h"
 #import "SEHouseListingTableView.h"
 #import "UILabel+LatoFont.h"
+#import "ILTranslucentView.h"
 
 #define BUTTON_HEIGHT 50
 
