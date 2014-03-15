@@ -10,9 +10,12 @@
 #import "SEDiscoverCell.h"
 #import "SEPropertyListingViewController.h"
 
-@interface SEDiscoverViewController () <UITableViewDataSource, UITableViewDelegate>
+#define BUTTON_HEIGHT 50
+
+@interface SEDiscoverViewController () <UITableViewDataSource, UITableViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) UIButton *cameraButton;
 
 @end
 
@@ -23,6 +26,7 @@
     [super viewDidLoad];
 	self.title = @"DISCOVER";
 	[self.view addSubview:self.tableView];
+	[self.view addSubview:self.cameraButton];
 	
 	UIBarButtonItem *searchIcon = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSearch target:nil action:nil];
 	self.navigationItem.rightBarButtonItem = searchIcon;
@@ -88,17 +92,50 @@
 	[self pushNewController:nextVC];
 }
 
+- (void)takePhoto
+{
+	if (![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
+		UIAlertView *myAlertView = [[UIAlertView alloc] initWithTitle:@"Unable to open Camera"
+															  message:@"Device has no camera"
+															 delegate:nil
+													cancelButtonTitle:@"OK"
+													otherButtonTitles: nil];
+		[myAlertView show];
+	} else {
+		UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+		picker.delegate = self;
+		picker.allowsEditing = YES;
+		picker.sourceType = UIImagePickerControllerSourceTypeCamera;
+		[self presentViewController:picker animated:YES completion:NULL];
+	}
+}
+
 #pragma mark -
 #pragma mark Property Accessors
 
 - (UITableView *)tableView
 {
 	CREATE_THREAD_SAFE_INSTANCE(_tableView, ^{
-		_tableView = [[UITableView alloc] initWithFrame:__blockself.view.bounds];
+		_tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, ViewWidth(__blockself.view), ViewHeight(__blockself.view))];
+		[_tableView setContentInset:UIEdgeInsetsMake(0, 0, BUTTON_HEIGHT, 0)];
 		_tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
 		_tableView.backgroundColor = [UIColor clearColor];
 		_tableView.delegate = __blockself;
 		_tableView.dataSource = __blockself;
+	});
+}
+
+- (UIButton *)cameraButton
+{
+	CREATE_THREAD_SAFE_INSTANCE(_cameraButton, ^{
+		float height = BUTTON_HEIGHT;
+		_cameraButton = [[UIButton alloc] initWithFrame:CGRectMake(0, ViewHeight(__blockself.view) - height,
+																	ViewWidth(__blockself.view), BUTTON_HEIGHT)];
+		_cameraButton.autoresizingMask = UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleWidth;
+		_cameraButton.backgroundColor = [SE_COLOR_BLUE colorWithAlphaComponent:0.7];
+		[_cameraButton setTitle:@"CAMERA" forState:UIControlStateNormal];
+		[_cameraButton addTarget:self action:@selector(takePhoto) forControlEvents:UIControlEventTouchUpInside];
+		[_cameraButton.titleLabel setFontRegularSize:18.0f];
 	});
 }
 

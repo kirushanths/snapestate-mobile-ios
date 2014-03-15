@@ -91,7 +91,6 @@
 		BC71E33B18B2F41500360B1F /* SEApiListingAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = BC71E33A18B2F41500360B1F /* SEApiListingAgent.m */; };
 		BC71E33E18B2F4A500360B1F /* SEApiListingPropertyImage.m in Sources */ = {isa = PBXBuildFile; fileRef = BC71E33D18B2F4A500360B1F /* SEApiListingPropertyImage.m */; };
 		BC71E35418B2F81100360B1F /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC71E34918B2F7C500360B1F /* libRestKit.a */; };
-		BC71E35A18B2FA1D00360B1F /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC71E35618B2FA1D00360B1F /* libTestFlight.a */; };
 		BC71E35C18B2FA4C00360B1F /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BC71E35B18B2FA4C00360B1F /* libz.dylib */; };
 		BC9C3EA418C581250017D62F /* SEHouseListingPriceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC9C3EA318C581250017D62F /* SEHouseListingPriceCell.m */; };
 		BC9C3EB018C583CA0017D62F /* ILTranslucentView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC9C3EAF18C583CA0017D62F /* ILTranslucentView.m */; };
@@ -124,6 +123,7 @@
 		BCC9F93A18C400C200DFBCD1 /* SEHouseListingInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC9F93918C400C200DFBCD1 /* SEHouseListingInfoCell.m */; };
 		BCC9F93E18C4C75300DFBCD1 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC9F93D18C4C75300DFBCD1 /* iCarousel.m */; };
 		BCC9F94218C4C7A800DFBCD1 /* FXPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC9F94118C4C7A800DFBCD1 /* FXPageControl.m */; };
+		BCDA982F18D4AD9500D2DE1C /* SECameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCDA982E18D4AD9500D2DE1C /* SECameraViewController.m */; };
 		BCED8EFC18A6AD23003AC386 /* SEBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BCED8EED18A6AD23003AC386 /* SEBaseCell.m */; };
 		BCED8EFD18A6AD23003AC386 /* SEButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BCED8EEF18A6AD23003AC386 /* SEButton.m */; };
 		BCED8EFE18A6AD23003AC386 /* SETextField.m in Sources */ = {isa = PBXBuildFile; fileRef = BCED8EF118A6AD23003AC386 /* SETextField.m */; };
@@ -333,10 +333,6 @@
 		BC71E33C18B2F4A500360B1F /* SEApiListingPropertyImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEApiListingPropertyImage.h; sourceTree = "<group>"; };
 		BC71E33D18B2F4A500360B1F /* SEApiListingPropertyImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEApiListingPropertyImage.m; sourceTree = "<group>"; };
 		BC71E34118B2F7C400360B1F /* RestKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RestKit.xcodeproj; path = RestKit/RestKit.xcodeproj; sourceTree = "<group>"; };
-		BC71E35618B2FA1D00360B1F /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
-		BC71E35718B2FA1D00360B1F /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
-		BC71E35818B2FA1D00360B1F /* TestFlight+AsyncLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestFlight+AsyncLogging.h"; sourceTree = "<group>"; };
-		BC71E35918B2FA1D00360B1F /* TestFlight+ManualSessions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestFlight+ManualSessions.h"; sourceTree = "<group>"; };
 		BC71E35B18B2FA4C00360B1F /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		BC9C3EA218C581250017D62F /* SEHouseListingPriceCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEHouseListingPriceCell.h; sourceTree = "<group>"; };
 		BC9C3EA318C581250017D62F /* SEHouseListingPriceCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEHouseListingPriceCell.m; sourceTree = "<group>"; };
@@ -377,6 +373,8 @@
 		BCC9F93D18C4C75300DFBCD1 /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
 		BCC9F94018C4C7A800DFBCD1 /* FXPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXPageControl.h; sourceTree = "<group>"; };
 		BCC9F94118C4C7A800DFBCD1 /* FXPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXPageControl.m; sourceTree = "<group>"; };
+		BCDA982D18D4AD9500D2DE1C /* SECameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SECameraViewController.h; sourceTree = "<group>"; };
+		BCDA982E18D4AD9500D2DE1C /* SECameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SECameraViewController.m; sourceTree = "<group>"; };
 		BCED8EEC18A6AD23003AC386 /* SEBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEBaseCell.h; sourceTree = "<group>"; };
 		BCED8EED18A6AD23003AC386 /* SEBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEBaseCell.m; sourceTree = "<group>"; };
 		BCED8EEE18A6AD23003AC386 /* SEButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEButton.h; sourceTree = "<group>"; };
@@ -447,7 +445,6 @@
 				BC5838AE188B89AF00301C53 /* CoreAudio.framework in Frameworks */,
 				BC5838AF188B89AF00301C53 /* CoreData.framework in Frameworks */,
 				BC5838B0188B89AF00301C53 /* CoreLocation.framework in Frameworks */,
-				BC71E35A18B2FA1D00360B1F /* libTestFlight.a in Frameworks */,
 				BC5838AA188B89A200301C53 /* Security.framework in Frameworks */,
 				BC5838A8188B899E00301C53 /* CFNetwork.framework in Frameworks */,
 				BC11A5B6188B6F120002D8D3 /* CoreGraphics.framework in Frameworks */,
@@ -604,7 +601,6 @@
 				BC5837B3188B881300301C53 /* RMPhoneFormat */,
 				BC5837B7188B881300301C53 /* SDURLCache */,
 				BC5837BD188B881300301C53 /* SVPullToRefresh */,
-				BC5837C3188B881300301C53 /* TestFlight */,
 				BC5837C8188B881300301C53 /* UIDeviceExtension */,
 			);
 			path = vendor;
@@ -651,17 +647,6 @@
 				BC5837C2188B881300301C53 /* UIScrollView+SVPullToRefresh.m */,
 			);
 			path = SVPullToRefresh;
-			sourceTree = "<group>";
-		};
-		BC5837C3188B881300301C53 /* TestFlight */ = {
-			isa = PBXGroup;
-			children = (
-				BC71E35618B2FA1D00360B1F /* libTestFlight.a */,
-				BC71E35718B2FA1D00360B1F /* TestFlight.h */,
-				BC71E35818B2FA1D00360B1F /* TestFlight+AsyncLogging.h */,
-				BC71E35918B2FA1D00360B1F /* TestFlight+ManualSessions.h */,
-			);
-			path = TestFlight;
 			sourceTree = "<group>";
 		};
 		BC5837C8188B881300301C53 /* UIDeviceExtension */ = {
@@ -739,6 +724,8 @@
 				BCED8F3A18A6F1C6003AC386 /* SESideMenuViewController.m */,
 				BC04D29818B088B80052FB92 /* SEPropertyListingViewController.h */,
 				BC04D29918B088B80052FB92 /* SEPropertyListingViewController.m */,
+				BCDA982D18D4AD9500D2DE1C /* SECameraViewController.h */,
+				BCDA982E18D4AD9500D2DE1C /* SECameraViewController.m */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -1328,6 +1315,7 @@
 				BCC9F93418C400A300DFBCD1 /* SEHouseListingBaseCell.m in Sources */,
 				BCED8F3618A6F00A003AC386 /* MMDrawerController.m in Sources */,
 				BC9C3EA418C581250017D62F /* SEHouseListingPriceCell.m in Sources */,
+				BCDA982F18D4AD9500D2DE1C /* SECameraViewController.m in Sources */,
 				BCED8F3B18A6F1C6003AC386 /* SESideMenuViewController.m in Sources */,
 				BCED8F0018A6AD23003AC386 /* SEAccessoryView.m in Sources */,
 			);
@@ -1490,6 +1478,8 @@
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = SnapEstate;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "armv6 armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1500,6 +1490,8 @@
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Kirushanth Sakthivetpillai (2383GGGV9U)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Kirushanth Sakthivetpillai (2383GGGV9U)";
 				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/snapestate-mobile-ios/vendor/";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "snapestate-mobile-ios/snapestate-mobile-ios-Prefix.pch";
@@ -1517,6 +1509,9 @@
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = SnapEstate;
+				PROVISIONING_PROFILE = "AE01DD56-3384-43CF-BD12-019E348F3A2F";
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "armv6 armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
