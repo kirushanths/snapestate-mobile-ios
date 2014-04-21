@@ -92,6 +92,7 @@
 		BC71E33E18B2F4A500360B1F /* SEApiListingPropertyImage.m in Sources */ = {isa = PBXBuildFile; fileRef = BC71E33D18B2F4A500360B1F /* SEApiListingPropertyImage.m */; };
 		BC71E35418B2F81100360B1F /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC71E34918B2F7C500360B1F /* libRestKit.a */; };
 		BC71E35C18B2FA4C00360B1F /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BC71E35B18B2FA4C00360B1F /* libz.dylib */; };
+		BC7DB5AA18D4CB8800E1E165 /* SETabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7DB5A918D4CB8800E1E165 /* SETabBarViewController.m */; };
 		BC9C3EA418C581250017D62F /* SEHouseListingPriceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC9C3EA318C581250017D62F /* SEHouseListingPriceCell.m */; };
 		BC9C3EB018C583CA0017D62F /* ILTranslucentView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC9C3EAF18C583CA0017D62F /* ILTranslucentView.m */; };
 		BC9C3ED318C5894B0017D62F /* ic_launcher.png in Resources */ = {isa = PBXBuildFile; fileRef = BC9C3EB818C5894B0017D62F /* ic_launcher.png */; };
@@ -334,6 +335,8 @@
 		BC71E33D18B2F4A500360B1F /* SEApiListingPropertyImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEApiListingPropertyImage.m; sourceTree = "<group>"; };
 		BC71E34118B2F7C400360B1F /* RestKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RestKit.xcodeproj; path = RestKit/RestKit.xcodeproj; sourceTree = "<group>"; };
 		BC71E35B18B2FA4C00360B1F /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		BC7DB5A818D4CB8800E1E165 /* SETabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SETabBarViewController.h; sourceTree = "<group>"; };
+		BC7DB5A918D4CB8800E1E165 /* SETabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SETabBarViewController.m; sourceTree = "<group>"; };
 		BC9C3EA218C581250017D62F /* SEHouseListingPriceCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEHouseListingPriceCell.h; sourceTree = "<group>"; };
 		BC9C3EA318C581250017D62F /* SEHouseListingPriceCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEHouseListingPriceCell.m; sourceTree = "<group>"; };
 		BC9C3EAE18C583CA0017D62F /* ILTranslucentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILTranslucentView.h; sourceTree = "<group>"; };
@@ -726,6 +729,8 @@
 				BC04D29918B088B80052FB92 /* SEPropertyListingViewController.m */,
 				BCDA982D18D4AD9500D2DE1C /* SECameraViewController.h */,
 				BCDA982E18D4AD9500D2DE1C /* SECameraViewController.m */,
+				BC7DB5A818D4CB8800E1E165 /* SETabBarViewController.h */,
+				BC7DB5A918D4CB8800E1E165 /* SETabBarViewController.m */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -1293,6 +1298,7 @@
 				BCED8EFE18A6AD23003AC386 /* SETextField.m in Sources */,
 				BC583882188B881300301C53 /* UILabel+FlexibleHeight.m in Sources */,
 				BC58387F188B881300301C53 /* NSString+Additions.m in Sources */,
+				BC7DB5AA18D4CB8800E1E165 /* SETabBarViewController.m in Sources */,
 				BCED8F0218A6AD23003AC386 /* SECheckbox.m in Sources */,
 				BCED8F0618A6AE34003AC386 /* SEDiscoverCell.m in Sources */,
 				BC04D29718B085FB0052FB92 /* SEBaseViewController.m in Sources */,
